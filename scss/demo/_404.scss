@@ -1,0 +1,75 @@
+/* ----------------------------------------------------------------
+
+	404.scss
+
+-----------------------------------------------------------------*/
+
+
+.error-404-nav-color {
+    color: $body-color !important;
+}
+
+@include media-breakpoint-up(lg) {
+    .error-404-nav-color {
+        color: $body-color !important;
+    }
+}
+
+
+.error-logo {
+
+    img {
+        width: 100%;
+    }
+
+    h6 {
+        color: $body-color;
+        text-align: center;
+        padding-top: 5rem;
+        font-weight: 300;
+        color: #ccc;
+    }
+}
+
+#error-sidebar {
+    padding: 8rem 16rem 7rem 9rem;
+    
+    h5 {
+        font-size: 0.75rem;
+        margin-bottom: 1px;
+        color: #ccc !important;
+    }
+    
+    ul {
+        
+        li {
+            border-bottom: 1px dotted #d1bfbb;
+            
+            a {                
+                color: $white;
+                display: inline-block;
+                font-family: $body-font;
+                font-size: 0.8rem;
+                font-weight: 500;
+                line-height: 1;
+                padding: 1rem 0.25rem;
+                text-decoration: none;
+                color: #ccc;
+            }
+            
+            a:hover {
+                color: #4c7e4e;
+            }
+        }
+    }
+}
+@include media-breakpoint-down(sm) {
+
+    .error-logo {
+        padding: 4rem !important;
+    }
+
+    #error-sidebar {
+        padding: 0rem 6rem 0rem 6rem !important;
+    }
+}

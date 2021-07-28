@@ -1,0 +1,195 @@
+
+/* ----------------------------------------------------------------
+
+	extras.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Extra Styles
+-----------------------------------------------------------------*/
+
+
+.shipping-banner {
+	position: absolute;
+	left: 4.375rem;
+	top: 5.625rem;	
+}
+
+.link-icon {
+	background-image: url(../images/icons/link.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 2.5625rem;
+	height: 2.5625rem;
+
+	&.black {
+		background-image: url(../images/icons/link_black.png);
+	}
+}
+
+a {
+	.link-icon {
+		@include transition(all 0.3s ease-in-out);
+	}
+
+	&:hover {
+		.link-icon {
+			@include translateX(1rem);
+		}
+	}	
+}
+
+.about-banner {
+
+    @include media-breakpoint-down(md) {
+        .content{
+            font-size: 1.5rem !important;
+        }
+
+        padding-top: 5rem !important;
+    }
+
+    h5 {
+        font-weight: 100;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    padding-top: 13rem;
+
+    .left {
+
+        .title {
+    
+            p {
+                margin: 0rem;
+            }
+    
+            h1 {
+                line-height: 1;
+                font-size: $h1-about;
+            }
+        }
+
+        .content {
+            font-size: .9rem;
+        }
+
+        .footer {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 5rem;
+        }
+
+        @include media-breakpoint-down(sm) {
+            padding: 2.5rem !important;
+        }
+
+    }
+
+    .right {
+
+        @media(min-width:1900px) {
+            padding-left: 9rem;
+        }
+
+        .content{
+            font-size: .9rem;
+        }
+
+        .pic{
+            position: absolute;
+            height: 29%;
+
+        }
+
+        @include media-breakpoint-down(lg) {
+            .pic{
+                position: relative;
+                height: auto;
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+
+            .pic{
+                position: relative;
+            }
+
+            .content {
+                padding: 2rem;
+            }
+        }
+    }
+}
+
+
+/*moving caroucel next and prev button*/ 
+.carousel-item {
+
+    @include media-breakpoint-down(md) {
+        padding: 3rem !important;
+    }
+
+    .title {
+        button {
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+    }
+}
+
+/*determine part style*/
+
+
+// twittor facebook and etc: you can see left of page;//
+#side-bar {
+    text-align: center; 
+
+    
+    .social {
+        grid-gap: 3rem;
+        position: absolute;
+        left: -7rem;
+        top: 38rem;
+        transform: rotate(-90deg);
+        font-size: $h5-font-size;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rgb(53, 53, 53);
+        }
+
+        @media(min-width:1600px) {
+            top: 48rem;
+        }
+        
+    }
+    @include media-breakpoint-down(md) {
+
+        .social{
+            font-size: 1rem !important;
+        }
+    }
+    @include media-breakpoint-down(xl) {
+
+        .social {
+            justify-content: center;
+            transform: rotate(0deg);
+            position: relative;
+            top: 0rem;
+            left: 0;
+            font-size: 2rem;
+            padding: 7rem 0 2rem 0;
+        }
+    }
+}

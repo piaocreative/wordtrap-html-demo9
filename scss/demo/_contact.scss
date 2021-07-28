@@ -1,0 +1,31 @@
+/* ----------------------------------------------------------------
+
+	Contact.scss
+
+-----------------------------------------------------------------*/
+
+
+#contact-info {
+    padding: 10.5rem 6.375rem;
+
+    @include media-breakpoint-down(md) {
+        padding: 5.5rem 4.375rem !important;
+    }
+
+
+    h5 {
+        font-size: 0.875rem;
+        font-weight: 600;
+    }
+
+    h4 {
+        color: #bbbbbb;
+    }
+}
+
+#contact-sidebar {
+    
+    img{
+        width: 100%;
+    }
+}
