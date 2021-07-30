@@ -143,8 +143,7 @@
 		@include transition(all 0.3s ease-in-out);				
 
 		&:hover {
-			background-color: $theme-color;
-			color: $white;
+			color: $dark;
 		}
 	}
 
@@ -168,12 +167,12 @@
 .onhot,
 .onsale {
 	font-family: "Roboto Slab",serif;
-	font-size: .8rem;
+	font-size: .9375rem;
 	line-height: 1;
 	font-weight: 500;
 	letter-spacing: .5px;
 	text-transform: uppercase;
-	padding: .8rem 1rem;
+	padding: 1rem 1.5rem;
 	position: absolute;
 	left: 1rem;
 	top: 1rem;
@@ -207,12 +206,12 @@
 }
 
 .banner-wishlist {
+	color: #ff3263;
 	position: absolute;
-	top: 0;
-	right: 0;
-	color: #fe3362;
+	right: 1.875rem;
+	top: 1.875rem;
+	z-index:3;
 }
-
 /* Top Products
 -----------------------------------------------------------------*/
 #top-products {
@@ -226,6 +225,13 @@
 		position: initial;
 		padding: 0;
 		opacity: 1;
+		
+		.add-to-cart {
+			&:hover {
+				background-color:$theme-color !important;
+			}
+		}
+		
 	}
 
 	.add-to-wishlist {
@@ -235,6 +241,7 @@
 		top: 1.875rem;
 		z-index:3;
 	}
+
 }
 
 /* Ads
@@ -246,6 +253,10 @@
 	min-height: 36rem;
 	width: 100%;
 	position: relative;
+
+	@include media-breakpoint-down(lg) {
+		padding: 9rem 0 9rem 0 !important;
+	}
 
 	.ads-content {
 		position: absolute;
@@ -265,7 +276,7 @@
 		padding: .5rem 0.9rem;
 		border-radius: 4rem;
 		font-size: .9375rem;
-		font-weight: 700;
+		font-weight: 700 !important;
 		font-family: 'Roboto Slab' !important;
 	}
 
@@ -275,7 +286,7 @@
 
 	button {
 		border-radius: 4rem;
-		padding: 1.6rem 2.2rem;
+		padding: 1.8rem 2.2rem;
 		font-size: .9rem;
 		font-weight: 700;
 		margin-top: 2rem;

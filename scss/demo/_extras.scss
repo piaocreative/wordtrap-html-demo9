@@ -48,8 +48,11 @@ a {
         .content{
             font-size: 1.5rem !important;
         }
+        .left{
 
-        padding-top: 5rem !important;
+            padding-top: 5rem !important;
+
+        }
     }
 
     h5 {
@@ -60,9 +63,12 @@ a {
         width: 100%;
     }
 
-    padding-top: 13rem;
+    
 
     .left {
+
+        padding-top: 13rem;
+        padding-right: 5rem;
 
         .title {
     
@@ -77,7 +83,8 @@ a {
         }
 
         .content {
-            font-size: .9rem;
+            font-size: 1.25rem;
+            line-height: 2.5rem;
         }
 
         .footer {
@@ -94,12 +101,19 @@ a {
 
     .right {
 
+        padding-top: 13rem;
+
+        @include media-breakpoint-down(md) {
+            padding-top: 0 !important;
+        }
+
         @media(min-width:1900px) {
             padding-left: 9rem;
         }
 
         .content{
-            font-size: .9rem;
+            font-size: 1.25rem;
+            line-height: 2.5rem;
         }
 
         .pic{
@@ -166,7 +180,7 @@ a {
         }
 
         a:hover {
-            color: rgb(53, 53, 53);
+            color: $theme-color;
         }
 
         @media(min-width:1600px) {

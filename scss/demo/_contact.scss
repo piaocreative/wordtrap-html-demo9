@@ -6,10 +6,14 @@
 
 
 #contact-info {
-    padding: 10.5rem 6.375rem;
+    padding: 10.5rem 17.375rem 10.5rem 10rem;
 
     @include media-breakpoint-down(md) {
         padding: 5.5rem 4.375rem !important;
+    }
+
+    .content {
+        font-size: 1.0625rem;
     }
 
 
@@ -19,7 +23,7 @@
     }
 
     h4 {
-        color: #bbbbbb;
+        color: #8e8e8e;
     }
 }
 

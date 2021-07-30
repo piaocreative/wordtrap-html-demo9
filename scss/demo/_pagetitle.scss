@@ -24,6 +24,11 @@
 		font-family: $heading-font;
 		line-height: 1 !important;
 		margin-bottom: 1.875rem;
+		font-size: 7.5rem;
+
+		@include media-breakpoint-down(sm) {
+			font-size: 4.5rem;
+		}
 	}
 
 	span {
@@ -64,6 +69,7 @@
 	a {
 		font-size: 1.215rem;
 		font-weight: 300;
+		font-family: sans-serif;
 	}
 
 	@include media-breakpoint-down(lg){
@@ -78,5 +84,9 @@
 
 		padding-bottom: 2rem;
 
+	}
+	span {
+		font-size: 1.4125rem;
+    	line-height: 2.5rem;
 	}
 }
