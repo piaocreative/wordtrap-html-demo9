@@ -57,6 +57,7 @@
 					height: 1.8125rem;		
 					vertical-align: middle;
 					text-align: center;
+
 					@include border-radius(50%);
 					@include transition(all 0.3s ease-in-out);
 		
@@ -73,8 +74,6 @@
 			}
 		}
 	}
-
-
 
 	// Widget - Links
 	&.widget-links {
@@ -94,12 +93,8 @@
 				}
 			}
 		}
-	}
 
-	@include media-breakpoint-down(md) {
-
-		&.widget-links {
-
+		@include media-breakpoint-down(md) {
 			.widget-content {
 				justify-content: space-between;
 			}
@@ -109,12 +104,13 @@
 				margin: auto;
 			}
 		}
-}
+	}
+
+	
 
 	// Widget - Payments
 	&.widget-payment {
 		.payments {
-
 			.payment-icon {
 				display: inline-block;
 				vertical-align: middle;
@@ -168,7 +164,6 @@
 		.widget-content {
 			#widget-subscribe-form {
 				.form-control,
-
 				.btn {
 					@include border-radius(1.625rem);
 				}

@@ -57,7 +57,6 @@
 }
 
 .seller-title {
-
 	&.h4 {
 		font-size: 1.75rem;
 	}
@@ -77,16 +76,10 @@
 	}
 	
 	@include media-breakpoint-down(lg) {
+		padding-bottom: 2rem;
 
 		h2 {
 			padding-top: 1rem;
 		}
-
-		padding-bottom: 2rem;
-
 	}
-	// span {
-	// 	font-size: 1.4125rem;
-    // 	line-height: 2.5rem;
-	// }
 }
