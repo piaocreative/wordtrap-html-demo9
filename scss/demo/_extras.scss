@@ -177,10 +177,10 @@ a {
         a {
             color: white;
             text-decoration: none;
-        }
 
-        a:hover {
-            color: $theme-color;
+            &:hover {
+                color: $theme-color;
+            }
         }
 
         @media(min-width:1600px) {

@@ -64,10 +64,10 @@
                 padding: 1rem 0.25rem;
                 text-decoration: none;
                 color: #ccc;
-            }
-            
-            a:hover {
-                color: #4c7e4e;
+
+                &:hover {
+                    color: #4c7e4e;
+                }
             }
         }
     }
