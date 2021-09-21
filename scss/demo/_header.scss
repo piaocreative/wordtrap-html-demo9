@@ -56,7 +56,6 @@
 }
 
 .navbar-collapse {
-
 	@include media-breakpoint-up(lg) {
 		padding: 0;
 
@@ -74,7 +73,6 @@
 -----------------------------------------------------------------*/
 
 .navbar-brand {
-
 	margin-right: 2.25rem;
 
 	@media(min-width:1700px) {
@@ -121,27 +119,26 @@
 		[data-cart-items] {
 			position: relative;
 			display: inline-block;
-		}
-		[data-cart-items]::before {
-			content: attr(data-cart-items);
-			position: absolute;
-			top: -.5rem;
-			right: -.75rem;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			width: 19px;
-			height: 19px;
-			font-size: 11px;
-			font-weight: 500;
-			border-radius: 50%;
-			border: 1px solid #fff;
-			background-color: #ff6f61;
-			color: #fff;
-		}
 
+			&::before {
+				content: attr(data-cart-items);
+				position: absolute;
+				top: -.5rem;
+				right: -.75rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 19px;
+				height: 19px;
+				font-size: 11px;
+				font-weight: 500;
+				border-radius: 50%;
+				border: 1px solid #fff;
+				background-color: #ff6f61;
+				color: #fff;
+			}
+		}
 	}
-
 }
 
 
@@ -163,6 +160,7 @@
 		@include media-breakpoint-up(lg) {
 			padding: 0;
 		}
+
 		@include media-breakpoint-down(xl) {
 			text-align: left;
 		}
@@ -185,6 +183,7 @@
 		left: 0;
 		width: 100%;		
 		margin: 0;
+
 		@include border-radius(0);
 		@include box-shadow(0 0 5px -1px rgba($black, 0.2));
 
@@ -231,7 +230,6 @@
 -----------------------------------------------------------------*/
 
 #top-infos {
-
 	.phone-number {
 		margin-right: 2.875rem;
 		

@@ -43,12 +43,12 @@ a {
 }
 
 .about-banner {
-
     @include media-breakpoint-down(md) {
-        .content{
+        .content {
             font-size: 1.5rem !important;
         }
-        .left{
+
+        .left {
 
             padding-top: 5rem !important;
 
@@ -61,17 +61,13 @@ a {
 
     img {
         width: 100%;
-    }
-
-    
+    }    
 
     .left {
-
         padding-top: 13rem;
         padding-right: 5rem;
 
-        .title {
-    
+        .title {    
             p {
                 margin: 0rem;
             }
@@ -96,11 +92,9 @@ a {
         @include media-breakpoint-down(sm) {
             padding: 2.5rem !important;
         }
-
     }
 
     .right {
-
         padding-top: 13rem;
 
         @include media-breakpoint-down(md) {
@@ -111,26 +105,24 @@ a {
             padding-left: 9rem;
         }
 
-        .content{
+        .content {
             font-size: 1.25rem;
             line-height: 2.5rem;
         }
 
-        .pic{
+        .pic {
             position: absolute;
             height: 29%;
-
         }
 
         @include media-breakpoint-down(lg) {
-            .pic{
+            .pic {
                 position: relative;
                 height: auto;
             }
         }
 
         @include media-breakpoint-down(md) {
-
             .pic{
                 position: relative;
             }
@@ -142,10 +134,8 @@ a {
     }
 }
 
-
 /*moving caroucel next and prev button*/ 
 .carousel-item {
-
     @include media-breakpoint-down(md) {
         padding: 3rem !important;
     }
@@ -164,7 +154,6 @@ a {
 // twittor facebook and etc: you can see left of page;//
 #side-bar {
     text-align: center; 
-
     
     .social {
         grid-gap: 3rem;
@@ -188,14 +177,14 @@ a {
         }
         
     }
-    @include media-breakpoint-down(md) {
 
+    @include media-breakpoint-down(md) {
         .social{
             font-size: 1rem !important;
         }
     }
-    @include media-breakpoint-down(xl) {
 
+    @include media-breakpoint-down(xl) {
         .social {
             justify-content: center;
             transform: rotate(0deg);

@@ -22,11 +22,8 @@
 
 #footer-main {
 	padding: 6.25rem 6rem 3rem;
-}
 
-@include media-breakpoint-down(md) {
-
-	#footer-main {
+	@include media-breakpoint-down(md) {
 		padding: 6.25rem 2rem 3rem;
 	}
 }
