@@ -6,16 +6,20 @@
 
 
 .error-404-nav-color {
-    color: $body-color;
+    color: $body-color !important;
 }
 
-.error-logo {
-    padding-top: 7.5rem;
-    padding-right: 12rem;
-
-    @include media-breakpoint-down(lg) {
-        padding: 4rem;
+@include media-breakpoint-up(lg) {
+    .error-404-nav-color {
+        color: $body-color !important;
     }
+}
+
+
+.error-logo {
+
+    padding-top: 7.5rem!important;
+    padding-right: 12rem;
 
     img {
         width: 100%;
@@ -38,23 +42,20 @@
     @include media-breakpoint-down(xxl) {
         padding-left: 0;
     }
-
-    @include media-breakpoint-down(lg) {
-        padding: 0 6rem 0rem 6rem ;
-    }
     
     h5 {
         font-size: 0.8rem;
         margin-bottom: 1px;
-        color: #ccc;
+        color: #ccc !important;
     }
     
-    ul {        
+    ul {
+        
         li {
             border-bottom: 1px dotted #363636;
             
-            a { 
-                color: #ccc;              
+            a {                
+                color: $white;
                 display: inline-block;
                 font-family: $body-font;
                 font-size: 0.9rem;
@@ -67,12 +68,17 @@
                 &:hover {
                     color: #4c7e4e;
                 }
-                text-decoration: none;                
-            }
-            
-            a:hover {
-                color: #4c7e4e;
             }
         }
+    }
+}
+@include media-breakpoint-down(lg) {
+
+    .error-logo {
+        padding: 4rem !important;
+    }
+
+    #error-sidebar {
+        padding: 0rem 6rem 0rem 6rem !important;
     }
 }

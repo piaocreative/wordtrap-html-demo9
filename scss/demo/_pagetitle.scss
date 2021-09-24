@@ -70,16 +70,4 @@
 		font-weight: 300;
 		font-family: sans-serif;
 	}
-
-	@include media-breakpoint-down(lg){
-		text-align:center
-	}
-	
-	@include media-breakpoint-down(lg) {
-		padding-bottom: 2rem;
-
-		h2 {
-			padding-top: 1rem;
-		}
-	}
 }

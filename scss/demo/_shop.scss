@@ -122,7 +122,6 @@
 		padding: .875rem .375rem;
 		opacity: 0;
 		z-index: 2;
-		
 		@include transition(all 0.3s ease-in-out);
 	}
 
@@ -144,8 +143,7 @@
 		@include transition(all 0.3s ease-in-out);				
 
 		&:hover {
-			background-color: $theme-color;
-			color: $white;
+			color: $dark;
 		}
 	}
 
@@ -249,51 +247,75 @@
 
 /* Ads
 -----------------------------------------------------------------*/
+
 .ads {
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	min-height: 36rem;
-	width: 100%;
 	position: relative;
+	display: block;
 
-	@include media-breakpoint-down(lg) {
-		padding: 9rem 0 9rem 0 !important;
-	}
-
-	.ads-content {
+	.ads-bg {
 		position: absolute;
-		top: 11rem;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
 
-		&.ads-content-left {
-			left: 4.375rem;
+		.ads-bg-img {
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: cover;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
 		}
-	
-		&.ads-content-right {
-			right: 4.375rem;
+	}
+
+	.ads-body {
+		position: relative;
+		z-index: 1;
+	}
+
+	&.ads1 {
+		.ads-body {
+			padding: 6rem;
+
+			.ads-content {
+				position: absolute;
+				top: 11rem;
+		
+				&.ads-content-left {
+					left: 4.375rem;
+				}
+			
+				&.ads-content-right {
+					right: 4.375rem;
+				}
+			}
+		
+			.title {
+				background-color: #f8a01b;
+				padding: .5rem 0.9rem;
+				border-radius: 4rem;
+				font-size: .9375rem;
+				font-weight: 700 !important;
+				font-family: 'Roboto Slab' !important;
+			}
+		
+			h2 {
+				font-size: 4rem;
+			}
+		
+			button {
+				border-radius: 4rem;
+				padding: 1.8rem 2.2rem;
+				font-size: .9rem;
+				font-weight: 700;
+				margin-top: 2rem;
+				font-family: 'Roboto Slab';
+				letter-spacing: 0.05rem;
+			}
 		}
-	}
-
-	.title {
-		background-color: #f8a01b;
-		padding: .5rem 0.9rem;
-		border-radius: 4rem;
-		font-size: .9375rem;
-		font-weight: 700 !important;
-		font-family: 'Roboto Slab' !important;
-	}
-
-	h2 {
-		font-size: 4rem;
-	}
-
-	button {
-		border-radius: 4rem;
-		padding: 1.8rem 2.2rem;
-		font-size: .9rem;
-		font-weight: 700;
-		margin-top: 2rem;
-		font-family: 'Roboto Slab';
-		letter-spacing: 0.05rem;
 	}
 }
