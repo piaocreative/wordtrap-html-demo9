@@ -43,19 +43,6 @@ $h6-font-size:               	  0.75rem;
 
 // $nav-padding:					          1.5rem 0rem;
 
-$spacer: 1.5rem !default;
-
-$spacers:(
-  0: 0,
-  1: $spacer / 4,
-  2: $spacer / 2,
-  3: $spacer,
-  4: $spacer * 2,
-  5: $spacer * 3,
-  6: $spacer * 4,
-  7: $spacer * 5,
-  8: $spacer * 6,
-) !default;
 
 $grid-gutter-width:             3rem;
 
