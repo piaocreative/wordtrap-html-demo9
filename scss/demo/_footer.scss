@@ -17,18 +17,10 @@
 #footer {
 	background-color: #000000;
 	position: relative;
-	font-size: $h5-font-size;
 }
 
 #footer-main {
 	padding: 6.25rem 6rem 3rem;
-}
-
-@include media-breakpoint-down(md) {
-
-	#footer-main {
-		padding: 6.25rem 2rem 3rem;
-	}
 }
 
 #copyrights {

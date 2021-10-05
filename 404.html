@@ -32,7 +32,7 @@
 
         <!-- Header
 		============================================= -->
-        <header id="header" class="transparent-header">
+        <header id="header" class="transparent-header bg-dark">
     
             <div id="header-wrap">
 
@@ -64,7 +64,7 @@
                                     ============================================= -->
                                     <div id="top-links">
         
-                                        <ul class="nav navbar-nav">
+                                        <ul class="nav navbar-nav align-items-center gap-4">
         
                                             <li class="nav-item dropdown">
                                                 <a href="#" class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
@@ -84,7 +84,7 @@
                                                 </ul>
                                             </li>
         
-                                            <li id="search" class="nav-item">
+                                            <li class="nav-item">
                                                 <a href="#" class="text-white"><i class="fas fa-search"></i></a>
                                             </li>
         
@@ -138,32 +138,36 @@
 
         <!-- Content
 		============================================= -->
-        <section id="content" class="bg-dark">
+        <section id="content" class="bg-dark top-0 m-0">
 
             <div class="content-wrap">
 
-                <div class="offset-xl-2">
-
-                    <!-- Error 404
-                    ============================================= -->
+                 <!-- Error 404
+                ============================================= -->
+                <div class="section">
+               
                     <div class="container-fluid p-0">
                         
-                        <div class="row pt-5">
+                        <div id="error-404" class="row">
     
-                            <!-- Error 404 logo
-                            ============================================= -->
-                            <div class="error-logo col-lg-5 offset-lg-1">
-                                <img src="./images/404/Untitled-1.png" class="img-fluid">
-                                <p class="">We're sorry, but the page you were looking for doesn't exist.</p>
-                            </div><!-- error logo -->
+                            <div class="col-lg-3 offset-lg-2">
+    
+                                <!-- Error 404 logo
+                                ============================================= -->
+                                <div class="error-logo">
+                                    <img src="./images/404/Untitled-1.png" class="img-fluid">
+                                    <p class="text-white pt-5 text-center fw-lighter">We're sorry, but the page you were looking for doesn't exist.</p>
+                                </div><!-- error logo -->
+    
+                            </div>
     
                             <!-- Error 404 sidebar
                             ============================================= -->
-                            <div id="error-sidebar" class="col-lg-2">
+                            <div id="error-sidebar" class="col-lg-2 offset-lg-2">
                                 
-                                <h5 class="text-white body-font fw-semi-bold mb-3 lh-1 text-uppercase">Here are some useful links</h5>
-                                <ul>
-                                    <li><a href="#">Home</a></li>
+                                <p class="text-white fw-semi-bold mb-3 text-uppercase text-center text-lg-start">Here are some useful links</p>
+                                <ul class="text-center text-lg-start">
+                                    <li><a href="#">Home <i class="fas fa-angle-right ms-1"></i></a></li>
                                     <li><a href="#">About Us</a></li>
                                     <li><a href="#">FAQ's</a></li>
                                     <li><a href="#">Sitemap</a></li>
@@ -173,17 +177,15 @@
                             </div><!-- side bar -->
     
                         </div>
+    
+                    </div>
 
-                    </div><!-- error 404 -->
-
-                </div>
-
-            </div>
+                </div><!-- error 404 -->
 
         </section><!-- Content -->
 
         <!-- Footer
-		============================================= -->
+        ============================================= -->
         <footer id="footer">
 
             <!-- Footer Main
@@ -201,7 +203,7 @@
                                 <div class="col">
 
                                     <div class="widget widget-links mb-lg-4 pt-2 text-center text-lg-start">
-                                        <h4 class="widget-title text-white text-uppercase body-font fw-semi-bold">CUSTOMER SERVICE</h4>
+                                        <h4 class="widget-title">CUSTOMER SERVICE</h4>
                                         <div class="widget-content d-md-flex">
                                             <ul>
                                                 <li><a href="#">Help & FAQs</a></li>
@@ -231,7 +233,7 @@
                         <div class="col-md-6 col-xl-3">
 
                             <div class="widget widget-custom-html pt-2 text-center text-lg-start">
-                                <h4 class="widget-title text-white text-uppercase body-font fw-semi-bold">Subscribe to our the free newslettr</h4>
+                                <h4 class="widget-title">Subscribe to our the free newslettr</h4>
                                 <div class="widget-content">
                                     <p>Get all the latest information on Events, Sales and Offers. Sign up for newsletter today.</p>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -251,13 +253,13 @@
 
                         </div>
 
-                        <div class="col-md-12 row g-0 col-xl-3 offset-xl-1">
+                        <div class="row col-xl-4 offset-xl-1">
 
                             <div class="col-md-6">
                                 
                                 <div class="widget widget-custom-html text-center text-lg-start">
                                     <div class="widget-content">
-                                        <p class="mb-2 text-white h4 body-font fw-semi-bold">New York</p>
+                                        <p class="mb-2 text-white fs-4 fw-semi-bold">New York</p>
                                         <p class="mb-0">5686 Edverano Center</p>
                                     </div>                                    
                                 </div>
@@ -275,10 +277,9 @@
                             </div>
 
                             <div class="col-md-6">
-
                                 <div class="widget widget-custom-html text-center text-lg-start">
                                     <div class="widget-content">
-                                        <a href="callto:1234567890" class="mb-2 text-white h4 body-font fw-semi-bold">123-456-7890</a>
+                                        <a href="callto:1234567890" class="mb-2 text-white fs-4 body-font fw-semi-bold">123-456-7890</a>
                                         <a href="mailto:info@gmail.com">info@gmail.com</a>
                                     </div>                                    
                                 </div>

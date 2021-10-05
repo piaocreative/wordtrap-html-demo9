@@ -21,53 +21,12 @@
 	
 	.title {
 		display: block;		
-		font-family: $heading-font;
-		line-height: 1 !important;
+		line-height: 1;
 		margin-bottom: 1.875rem;
 		font-size: 7.5rem;
 
 		@include media-breakpoint-down(sm) {
 			font-size: 4.5rem;
 		}
-	}
-
-	span {
-		color: $white;
-		font-size: 1.3125rem;
-		font-weight: 300;
-	}
-}
-
-.breadcrumb {
-	display: flex;
-	font-size: $h6-font-size;
-	padding: 0.625rem 0;
-
-	li {
-		padding: 0 0.625rem;
-
-		&.active {
-			color: #ddcef5;
-		}
-
-		&:first-child {
-			padding-left: 0;
-		}
-	}
-}
-
-.seller-title {
-	&.h4 {
-		font-size: 1.75rem;
-	}
-
-	h2 {
-		font-size: 6.125rem;
-	}
-
-	a {
-		font-size: 1.215rem;
-		font-weight: 300;
-		font-family: sans-serif;
 	}
 }

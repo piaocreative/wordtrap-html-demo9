@@ -22,29 +22,26 @@
         h4 {
             margin-bottom: 1rem;
             line-height: 2.8rem;
-            font-family: 'Roboto Slab';
+            font-family: $heading-font;
         }
     }
 
     .entry-meta {
 
         a {
-            color: #aeaeae;;
+            color: #aeaeae;
         }
 
         .entry-categories {
-
             a {
-
                 color: $theme-color;
-
             }
         }
     }
 
     .entry-link {
 		color: #fdfdfd;
-		font-family: 'Roboto Slab';
+		font-family: $heading-font;
 		background-color: #19d678;
 		border-color: #19d678;
 		margin-top: 2rem;
@@ -91,18 +88,11 @@
 }
 
 .entry-title {
-	h4 {
-		font-family: $body-font;
-		font-weight: 300;
-		line-height: $line-height-sm;		
-		margin-bottom: 0.625rem;
-
-		a {
-			color: $heading-color;
-			
-			&:hover { color: $theme-color; }
-		}
-	}
+	font-family: $body-font;
+	line-height: $line-height-sm;		
+	margin-bottom: 0.625rem;
+	font-size: 1.875rem;
+	font-weight: 800;
 }
 
 .entry-content {
@@ -116,13 +106,14 @@
 
 	li {
 		font-size: $h6-font-size;
-		font-weight: 400;
 		line-height: 1;
 
 		a {
 			color: $body-color;
 
-			&:hover { color: $theme-color; }
+			&:hover { 
+				color: $theme-color;
+			}
 		}
 	}
 }

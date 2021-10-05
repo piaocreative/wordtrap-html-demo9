@@ -166,13 +166,14 @@
 .onnew,
 .onhot,
 .onsale {
-	font-family: "Roboto Slab",serif;
-	font-size: .8rem;
+	font-family: $heading-font;
+	font-weight: 800;
+	font-size: .9375rem;
 	line-height: 1;
 	font-weight: 500;
 	letter-spacing: .5px;
 	text-transform: uppercase;
-	padding: .7rem 1.2rem;
+	padding: .8rem 1.2rem;
 	position: absolute;
 	left: 1rem;
 	top: 1rem;
@@ -229,7 +230,7 @@
 		
 		.add-to-cart {
 			&:hover {
-				background-color:$theme-color !important;
+				background-color:$theme-color;
 			}
 		}
 		
@@ -242,7 +243,6 @@
 		top: 1.875rem;
 		z-index:3;
 	}
-
 }
 
 /* Ads
@@ -299,21 +299,21 @@
 				padding: .5rem 0.9rem;
 				border-radius: 4rem;
 				font-size: .9375rem;
-				font-weight: 700 !important;
-				font-family: 'Roboto Slab' !important;
+				font-weight: 700;
+				font-family: $heading-font;
 			}
 		
 			h2 {
-				font-size: 4rem;
+				font-size: 3.75rem;
 			}
 		
 			button {
 				border-radius: 4rem;
 				padding: 1.8rem 2.2rem;
-				font-size: .9rem;
-				font-weight: 700;
+				font-size: .9375rem;
+				font-weight: 800;
 				margin-top: 2rem;
-				font-family: 'Roboto Slab';
+				font-family: $heading-font;
 				letter-spacing: 0.05rem;
 			}
 		}

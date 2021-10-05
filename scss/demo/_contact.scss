@@ -6,30 +6,7 @@
 
 
 #contact-info {
-    padding: 10.5rem 17.375rem 10.5rem 10rem;
-
-    @include media-breakpoint-down(md) {
-        padding: 5.5rem 4.375rem !important;
-    }
-
-    .content {
-        font-size: 1.0625rem;
-    }
-
-
-    h5 {
-        font-size: 0.875rem;
-        font-weight: 600;
-    }
-
-    h4 {
-        color: #8e8e8e;
-    }
-}
-
-#contact-sidebar {
-    
-    img{
-        width: 100%;
+    @include media-breakpoint-up(lg) {
+        padding: 13rem 0 5rem;
     }
 }

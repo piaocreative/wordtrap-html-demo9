@@ -15,7 +15,6 @@
     <!-- Fontawesome
 	============================================= -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" type="text/css" />
-    <!-- <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"> -->
 
     <!-- Slick
     ============================================= -->
@@ -72,10 +71,10 @@
                                         ============================================= -->
                                         <div id="top-links">
             
-                                            <ul class="nav navbar-nav">
+                                            <ul class="nav navbar-nav align-items-center gap-4">
             
                                                 <li class="nav-item dropdown">
-                                                    <a href="#" class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
+                                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
                                                     <ul class="dropdown-menu">
                                                         <li><a href="#" class="dropdown-item">EUR</a></li>
                                                         <li><a href="#" class="dropdown-item">AUD</a></li>
@@ -84,7 +83,7 @@
                                                 </li>
             
                                                 <li class="nav-item dropdown">
-                                                    <a href="#" class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" aria-expanded="false">ENG</a>
+                                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">ENG</a>
                                                     <ul class="dropdown-menu">
                                                         <li><a href="#" class="dropdown-item"><img src="images/icons/flags/french.png" alt="French"> FR</a></li>
                                                         <li><a href="#" class="dropdown-item"><img src="images/icons/flags/italian.png" alt="Italian"> IT</a></li>
@@ -92,8 +91,8 @@
                                                     </ul>
                                                 </li>
             
-                                                <li id="search" class="nav-item">
-                                                    <a href="#" class="text-dark"><i class="fas fa-search"></i></a>
+                                                <li class="nav-item">
+                                                    <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
                                                 </li>
             
                                             </ul>
@@ -107,15 +106,15 @@
                                             <ul class="navbar-nav flex-row">
             
                                                 <li class="nav-item">
-                                                    <a href="#" class="nav-link p-0 text-dark"><i class="far fa-heart"></i></a>
+                                                    <a href="#" class="nav-link"><i class="far fa-heart"></i></a>
                                                 </li>
             
                                                 <li class="nav-item">
-                                                    <a href="#" class="nav-link p-0 text-dark"><i class="far fa-user"></i></a>
+                                                    <a href="#" class="nav-link"><i class="far fa-user"></i></a>
                                                 </li>
             
                                                 <li class="nav-item">
-                                                    <a class="nav-link p-0 text-dark" data-toggle="modal" href="#modalShoppingCart">
+                                                    <a class="nav-link" data-toggle="modal" href="#modalShoppingCart">
                                                         <span data-cart-items="2">
                                                           <i class="fas fa-shopping-cart"></i>
                                                         </span>
@@ -123,7 +122,7 @@
                                                 </li>
             
                                                 <li class="nav-item">
-                                                    <a href="#" class="nav-link p-0 text-dark"><i class="fas fa-bars"></i></a>
+                                                    <a href="#" class="nav-link"><i class="fas fa-bars"></i></a>
                                                 </li>
             
                                             </ul>
@@ -154,20 +153,19 @@
 
                 <div class="container-fluid p-0">
 
-                    <div class="row">
+                    <div class="row g-0 position-relative">
 
-                        <div class="col-xl-2 bg-dark">  
+                        <div class="col-xl-2 bg-dark position-relative">  
     
-                            <!-- Sidebar
+                            <!-- Top social
                             ============================================= -->                        
-                            <div id="side-bar">
-    
-                                <div class="social d-flex">
-                                    <div><a href="#">FOLLOW US</a></div>
-                                    <div><a href="#">FACEBOOK</a></div>
-                                    <div><a href="#">INSTAGRAM</a></div>
-                                    <div><a href="#">TWITTER</a></div>
-                                </div>
+                            <div id="top-social">
+                                <ul>
+                                    <li><a href="#">Follw Us</a></li>
+                                    <li><a href="#">FaeBook</a></li>
+                                    <li><a href="#">Instagram</a></li>
+                                    <li><a href="#">Twitter</a></li>
+                                </ul>
     
                             </div><!-- #side-bar -->                        
     
@@ -267,9 +265,9 @@
 
                             <div class="col-xl-2 offset-xl-2">
     
-                                <div class="seller-title text-center text-xl-start">
+                                <div class="bestseller text-center text-xl-start mt-5">
     
-                                    <span class="onhot position-static">DRESSES</span>
+                                    <span class="ondress position-static text-white">DRESSES</span>
                                     <h2 class="text-white h1 m-0">199$</h2>
                                     <span class="h4 text-white m-0">Bestsellers</span><br>
                                     <span class="h4 text-white m-0">all for one price</span>
@@ -367,7 +365,7 @@
                 <div class="section">
 
                     <div class="heading-block text-center">
-                        <h3 class="title">Best  Products</h3>
+                        <h2 class="title mb-0">Best  Products</h2>
                     </div>
 
                     <div class="container-fluid p-0">
@@ -719,14 +717,11 @@
 
                         <div class="col-lg-6">
     
-                            <article class="post row g-0 m-0 h-100">
-    
-                                <div class="col-lg-6 p-4">
-                                    <div class="post-content">
-                                        <div class="entry-title">
-                                            <h4 class="mb-2 fw-bold"><a href="#">How to determine<br>your size</a></h4>
-                                        </div>
-                                        <div class="entry-meta mb-3 d-flex justify-content-between">
+                            <article class="post row g-0 h-100 align-items-center">
+                                <div class="col-lg-6 p-5">
+                                    <div class="post-content pe-lg-5">
+                                        <h4 class="entry-title mb-4">How to determine<br>your size</h4>
+                                        <div class="entry-meta mb-4 d-flex justify-content-between">
                                             <div class="entry-categories">
                                                 <a href="#">Tags</a>
                                             </div>
@@ -753,10 +748,8 @@
     
                             <article class="post post-reverse m-0">     
     
-                                <div class="post-content m-0 p-4 h-50">
-                                    <div class="entry-title">
-                                        <h4 class="mb-3 fw-bold"><a href="#">How to determine<br>your size</a></h4>
-                                    </div>
+                                <div class="post-content m-0 p-5 h-50">
+                                    <h4 class="entry-title mb-4">How to determine<br>your size</h4>
                                     <div class="entry-meta d-flex justify-content-between">
                                         <div class="entry-categories">
                                             <a href="#">Tags</a>
@@ -776,35 +769,27 @@
                         <div class="col-lg-2">
     
                             <article class="post m-0">
-    
                                 <div class="post-thumbnail h-50">
                                     <a href="#"><img src="./images/shop/ditermine3.png" alt="Top Jeans Collection"></a>
-                                </div>                             
-    
-                                <div class="post-content h-50 m-0 p-4">
-                                    <div class="entry-title">
-                                        <h4 class="mb-3 fw-bold"><a href="#">How to determine<br>your size</a></h4>
-                                    </div>
+                                </div>                 
+                                <div class="post-content h-50 m-0 p-5">
+                                    <h4 class="entry-title mb-4">How to determine<br>your size</h4>
                                     <div class="entry-meta d-flex justify-content-between">
                                         <div class="entry-categories">
                                             <a href="#">Tags</a>
                                         </div>
                                         <div><a href="#">02 oct</a></div>
                                     </div>
-                                </div>             
-    
+                                </div>   
                             </article>   
     
                         </div>
     
                         <div class="col-lg-2">
     
-                            <article class="post post-reverse m-0">           
-    
-                                <div class="post-content h-50 m-0 p-4">
-                                    <div class="entry-title">
-                                        <h4 class="mb-3 fw-bold"><a href="#">How to determine<br>your size</a></h4>
-                                    </div>
+                            <article class="post post-reverse m-0">         
+                                <div class="post-content h-50 m-0 p-5">
+                                    <h4 class="entry-title mb-4">How to determine<br>your size</h4>
                                     <div class="entry-meta d-flex justify-content-between">
                                         <div class="entry-categories">
                                             <a href="#">Tags</a>
@@ -812,11 +797,9 @@
                                         <div><a href="#">02 oct</a></div>
                                     </div>
                                 </div>
-    
                                 <div class="post-thumbnail h-50">
                                     <a href="#"><img src="./images/shop/ditermine4.png" alt="Top Jeans Collection"></a>
-                                </div>       
-    
+                                </div>     
                             </article>     
     
                         </div>
@@ -844,7 +827,7 @@
         </section><!-- Content -->
 
         <!-- Footer
-		============================================= -->
+        ============================================= -->
         <footer id="footer">
 
             <!-- Footer Main
@@ -862,7 +845,7 @@
                                 <div class="col">
 
                                     <div class="widget widget-links mb-lg-4 pt-2 text-center text-lg-start">
-                                        <h4 class="widget-title text-white text-uppercase body-font fw-semi-bold">CUSTOMER SERVICE</h4>
+                                        <h4 class="widget-title">CUSTOMER SERVICE</h4>
                                         <div class="widget-content d-md-flex">
                                             <ul>
                                                 <li><a href="#">Help & FAQs</a></li>
@@ -892,7 +875,7 @@
                         <div class="col-md-6 col-xl-3">
 
                             <div class="widget widget-custom-html pt-2 text-center text-lg-start">
-                                <h4 class="widget-title text-white text-uppercase body-font fw-semi-bold">Subscribe to our the free newslettr</h4>
+                                <h4 class="widget-title">Subscribe to our the free newslettr</h4>
                                 <div class="widget-content">
                                     <p>Get all the latest information on Events, Sales and Offers. Sign up for newsletter today.</p>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -912,13 +895,13 @@
 
                         </div>
 
-                        <div class="col-md-12 row g-0 col-xl-3 offset-xl-1">
+                        <div class="row col-xl-4 offset-xl-1">
 
                             <div class="col-md-6">
                                 
                                 <div class="widget widget-custom-html text-center text-lg-start">
                                     <div class="widget-content">
-                                        <p class="mb-2 text-white h4 body-font fw-semi-bold">New York</p>
+                                        <p class="mb-2 text-white fs-4 fw-semi-bold">New York</p>
                                         <p class="mb-0">5686 Edverano Center</p>
                                     </div>                                    
                                 </div>
@@ -936,10 +919,9 @@
                             </div>
 
                             <div class="col-md-6">
-
                                 <div class="widget widget-custom-html text-center text-lg-start">
                                     <div class="widget-content">
-                                        <a href="callto:1234567890" class="mb-2 text-white h4 body-font fw-semi-bold">123-456-7890</a>
+                                        <a href="callto:1234567890" class="mb-2 text-white fs-4 body-font fw-semi-bold">123-456-7890</a>
                                         <a href="mailto:info@gmail.com">info@gmail.com</a>
                                     </div>                                    
                                 </div>

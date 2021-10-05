@@ -38,11 +38,8 @@
 }
 
 #header-wrap {
-	padding-left: 4.375rem;
-	padding-right: 2.375rem;
-
-	@include media-breakpoint-down(sm) {
-		padding: 0rem !important;
+	@include media-breakpoint-up(xxl) {
+		padding: 1rem 4.375rem 2.375rem;
 	}
 }
 
@@ -53,14 +50,6 @@
 .navbar-toggler {
 	border-radius: 0;
 	background-color: #00d772;
-}
-
-.navbar-collapse {
-
-	@include media-breakpoint-up(lg) {
-		padding: 0;
-
-	}
 }
 
 
@@ -74,15 +63,10 @@
 -----------------------------------------------------------------*/
 
 .navbar-brand {
-
-	margin-right: 2.25rem;
-
-	@media(min-width:1700px) {
-		margin-right: 8rem;
-	}
+	margin-right: 8rem;
 
 	img {
-		width: 85%;
+		width: 6rem;
 	}
 }
 
@@ -113,9 +97,10 @@
 	.nav-link {
 		font-size: $top-btn-font-size;	
 		line-height: 1;
+		color: $dark;
 
 		&:hover {
-			color: $theme-color !important;
+			color: $theme-color;
 		}
 		
 		[data-cart-items] {
@@ -140,8 +125,10 @@
 			color: #fff;
 		}
 
+		@include media-breakpoint-down(xl) {
+			color: $white;
+		}
 	}
-
 }
 
 
@@ -150,25 +137,13 @@
 -----------------------------------------------------------------*/
 
 #top-links {
-	.nav-item {			
-		@include media-breakpoint-up(lg) {
-			padding-right: 1.875rem;		
-		}
-	}
-
 	a.nav-link {
 		display: block;
 		font-size: 0.75rem;	
-		
-		@include media-breakpoint-up(lg) {
-			padding: 0;
-		}
-		@include media-breakpoint-down(xl) {
-			text-align: left;
-		}
+		color: $dark;
 
 		&:hover {
-			color: $theme-color !important;
+			color: $theme-color;
 		}
 	}
 
@@ -185,12 +160,10 @@
 		left: 0;
 		width: 100%;		
 		margin: 0;
-		@include border-radius(0);
-		@include box-shadow(0 0 5px -1px rgba($black, 0.2));
 
-		@include media-breakpoint-down(xl) {
-			width: 8.75rem;
-		}
+		@include border-radius(0);
+
+		@include box-shadow(0 0 5px -1px rgba($black, 0.2));
 
 		a.dropdown-item {
 			color: $heading-color;
@@ -217,34 +190,59 @@
 
 @include media-breakpoint-down(xl) {
 	.nav-link {
-		color: white !important;
+		color: white;
 	}
 
 	#header {
-		background-color: $heading-color !important;
+		background-color: #000;
 	}
 }
 
+#top-social {
+	position: absolute;
+	left: 38%;
+	bottom: 0;
+
+    ul {
+		li {
+			transform: rotate(-90deg);
+			margin-bottom: 8rem;
+
+			a {
+				color: white;
+				white-space: nowrap;
+				text-transform: uppercase;
+				font-size: 0.875rem;
+	
+				&:hover {
+					color: $theme-color;
+				}
+			}
+		}
+    }
+
+    @include media-breakpoint-down(xl) {
+		position: relative;
+		left: 0;
+		padding: 7rem 0 2rem 0;
+
+		ul {
+			display: flex;
+			justify-content: center;
+			gap: 3rem;
+
+			li {
+				transform: rotate(0deg);
+				margin: 0;
+			}
+		}
+    }
+}
 
 /* ----------------------------------------------------------------
 	Top Infos
 -----------------------------------------------------------------*/
 
-#top-infos {
-
-	.phone-number {
-		margin-right: 2.875rem;
-		
-		a {
-			color: $topbar-color;
-			margin-left: 1.75rem;
-
-			&:hover {
-				color: $topbar-hover-color;
-			}
-		}
-	}
-}
 
 
 /* ----------------------------------------------------------------

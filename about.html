@@ -76,10 +76,10 @@
                                     ============================================= -->
                                     <div id="top-links">
         
-                                        <ul class="nav navbar-nav">
+                                        <ul class="nav navbar-nav align-items-center gap-4">
         
                                             <li class="nav-item dropdown">
-                                                <a href="#" class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
+                                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
                                                 <ul class="dropdown-menu">
                                                     <li><a href="#" class="dropdown-item">EUR</a></li>
                                                     <li><a href="#" class="dropdown-item">AUD</a></li>
@@ -88,7 +88,7 @@
                                             </li>
         
                                             <li class="nav-item dropdown">
-                                                <a href="#" class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" aria-expanded="false">ENG</a>
+                                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">ENG</a>
                                                 <ul class="dropdown-menu">
                                                     <li><a href="#" class="dropdown-item"><img src="images/icons/flags/french.png" alt="French"> FR</a></li>
                                                     <li><a href="#" class="dropdown-item"><img src="images/icons/flags/italian.png" alt="Italian"> IT</a></li>
@@ -96,8 +96,8 @@
                                                 </ul>
                                             </li>
         
-                                            <li id="search" class="nav-item">
-                                                <a href="#" class="text-dark"><i class="fas fa-search"></i></a>
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
                                             </li>
         
                                         </ul>
@@ -111,23 +111,23 @@
                                         <ul class="navbar-nav flex-row">
         
                                             <li class="nav-item">
-                                                <a href="#" class="nav-link p-0 text-dark"><i class="far fa-heart"></i></a>
+                                                <a href="#" class="nav-link"><i class="far fa-heart"></i></a>
                                             </li>
         
                                             <li class="nav-item">
-                                                <a href="#" class="nav-link p-0 text-dark"><i class="far fa-user"></i></a>
+                                                <a href="#" class="nav-link"><i class="far fa-user"></i></a>
                                             </li>
         
                                             <li class="nav-item">
-                                                <a class="nav-link p-0 text-dark" data-toggle="modal" href="#modalShoppingCart">
+                                                <a class="nav-link" data-toggle="modal" href="#modalShoppingCart">
                                                     <span data-cart-items="2">
                                                         <i class="fas fa-shopping-cart"></i>
                                                     </span>
-                                                    </a>
+                                                </a>
                                             </li>
         
                                             <li class="nav-item">
-                                                <a href="#" class="nav-link p-0 text-dark"><i class="fas fa-bars"></i></a>
+                                                <a href="#" class="nav-link"><i class="fas fa-bars"></i></a>
                                             </li>
         
                                         </ul>
@@ -156,120 +156,106 @@
 
                 <div class="container-fluid p-0">
 
-                    <div class="row about-banner">
+                    <div class="row position-relative">
 
-                        <div class="col-xl-2 bg-dark">  
+                        <div class="col-xl-2 bg-dark position-relative">  
     
-                           <!-- Sidebar
+                            <!-- Top social
                             ============================================= -->                        
-                            <div id="side-bar">
+                            <div id="top-social">
+                                <ul>
+                                    <li><a href="#">Follw Us</a></li>
+                                    <li><a href="#">FaeBook</a></li>
+                                    <li><a href="#">Instagram</a></li>
+                                    <li><a href="#">Twitter</a></li>
+                                </ul>
     
-                                <div class="social d-flex">
-                                    <div><a href="#">FOLLOW US</a></div>
-                                    <div><a href="#">FACEBOOK</a></div>
-                                    <div><a href="#">INSTAGRAM</a></div>
-                                    <div><a href="#">TWITTER</a></div>
-                                </div>
-    
-                            </div>                          
+                            </div><!-- #side-bar -->                        
     
                         </div>
     
                         <!-- banner side
                         ============================================= -->
-                        <!-- <div class="row g-0 col-xl-4 about-banner"> -->
-    
-                        <div class="col-lg-6 col-xl-4 offset-xl-1 left">
-    
-                            <div id="page-title">
-                                <h2 class="h1 title">About<br>us</h2>
-                            </div>
-    
-                            <div class="content col-xxl-7 pb-7 text-dark">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </div>
-    
-                            <div class="footer">
-                                <div>
-                                    <img src="./images/about/about1.png">
+                        <div id="about" class="col-xl-9 offset-lg-1">
+                            
+                            <div class="row">
+
+                                <div class="col-lg-5">
+
+                                    <div id="page-title">
+                                        <h1 class="title">About<br>us</h1>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-xxl-7 pb-5">
+                                            <p class="fs-5 lh-base fw-lighter">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            </p>
+                                        </div>
+                                    </div>
+            
+                                    <div class="row">
+                                        <div class="col-md-6 col-lg-5">
+                                            <img src="./images/about/about1.png" class="w-100 mb-3 mb-lg-0">
+                                        </div>
+                                        <div class="col-md-6 col-lg-5">
+                                            <img src="./images/about/about2.png" class="w-100 mb-3 mb-lg-0">
+                                        </div>
+                                    </div>
+
                                 </div>
-                                <div>
-                                    <img src="./images/about/about2.png">
+
+                                <div class="col-lg-6">
+                                    <p class="lh-base fs-5 ps-lg-5 fw-lighter">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
                                 </div>
+
                             </div>
-    
-                        </div>
-    
-                        <div class="col-lg-6 col-xl-5 right">
-    
-                            <div class="content col-lg-9 pb-5 text-dark">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
-                            </div>
-    
-                            <div class="pic d-flex">
-                                <img src="./images/about/about3.png">
-                            </div>
+
                         </div>
     
                     </div>
-    
 
+                </div>
+
+                <div class="about-banner">
+                    <div class="container-fluid p-0">
+                        <div class="row">
+                            <div class="col-lg-5 offset-lg-7">
+                                <img src="./images/about/about3.png" class="w-100">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
                 <!-- best seller side
                 ============================================= -->
-                <div class="bg-dark row g-0">
+                <div class="container-fluid p-0">
 
-                        <div class="col-xl-10 offset-xl-2 row g-0">
+                    <div class="bg-dark row py-5 ">
 
-                            <div class="col-lg-4">
+                            <div class="col-lg-3 offset-lg-2">
 
-                                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner">
-                                    <div class="carousel-item px-5 active">
-                                        <div class="col-xl-12 title py-5 seller-title">
-                                            <span class="onhot position-static">OUR HISTORY</span>
-                                            <h2 class="text-white h1 mt-2">2019</h2>
-                                            <span class="text-white">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                            </span>
-                                        </div>
+                                <div class="bestsellers">
+
+                                    <div class="bestseller py-5">
+                                        <span class="ondress text-white">OUR HISTORY</span>
+                                        <h2 class="text-white h1 mt-2">2019</h2>
+                                        <p class="text-white fs-5 lh-base fw-lighter">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        </p>
                                     </div>
 
-                                    <div class="carousel-item px-5">
-                                        <div class="col-xl-12 title py-5 seller-title">
-                                            <span class="onhot position-static">OUR HISTORY</span>
-                                            <h2 class="text-white h1 mt-2">2019</h2>
-                                            <span class="text-white">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                            </span>
-                                        </div>
+                                    <div class="bestseller py-5">
+                                        <span class="ondress text-white">OUR HISTORY</span>
+                                        <h2 class="text-white h1 mt-2">2019</h2>
+                                        <p class="text-white fs-5 lh-base fw-lighter">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        </p>
                                     </div>
 
-                                    <div class="carousel-item px-5">
-                                        <div class="col-xl-12 title py-5 seller-title">
-                                            <span class="onhot position-static">OUR HISTORY</span>
-                                            <h2 class="text-white h1 mt-2">2019</h2>
-                                            <span class="text-white">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                            </span>
-                                        </div>
-                                    </div>
-                                    
-                                    <a class="carousel-control-prev prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a class="carousel-control-next next" href="#carouselExampleControls" role="button" data-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                                    
                                 </div>
 
                             </div>
-
-                        </div>
 
                     </div>
 
@@ -492,7 +478,7 @@
         </section>
 
         <!-- Footer
-		============================================= -->
+        ============================================= -->
         <footer id="footer">
 
             <!-- Footer Main
@@ -510,7 +496,7 @@
                                 <div class="col">
 
                                     <div class="widget widget-links mb-lg-4 pt-2 text-center text-lg-start">
-                                        <h4 class="widget-title text-white text-uppercase body-font fw-semi-bold">CUSTOMER SERVICE</h4>
+                                        <h4 class="widget-title">CUSTOMER SERVICE</h4>
                                         <div class="widget-content d-md-flex">
                                             <ul>
                                                 <li><a href="#">Help & FAQs</a></li>
@@ -540,7 +526,7 @@
                         <div class="col-md-6 col-xl-3">
 
                             <div class="widget widget-custom-html pt-2 text-center text-lg-start">
-                                <h4 class="widget-title text-white text-uppercase body-font fw-semi-bold">Subscribe to our the free newslettr</h4>
+                                <h4 class="widget-title">Subscribe to our the free newslettr</h4>
                                 <div class="widget-content">
                                     <p>Get all the latest information on Events, Sales and Offers. Sign up for newsletter today.</p>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -560,13 +546,13 @@
 
                         </div>
 
-                        <div class="col-md-12 row g-0 col-xl-3 offset-xl-1">
+                        <div class="row col-xl-4 offset-xl-1">
 
                             <div class="col-md-6">
                                 
                                 <div class="widget widget-custom-html text-center text-lg-start">
                                     <div class="widget-content">
-                                        <p class="mb-2 text-white h4 body-font fw-semi-bold">New York</p>
+                                        <p class="mb-2 text-white fs-4 fw-semi-bold">New York</p>
                                         <p class="mb-0">5686 Edverano Center</p>
                                     </div>                                    
                                 </div>
@@ -584,10 +570,9 @@
                             </div>
 
                             <div class="col-md-6">
-
                                 <div class="widget widget-custom-html text-center text-lg-start">
                                     <div class="widget-content">
-                                        <a href="callto:1234567890" class="mb-2 text-white h4 body-font fw-semi-bold">123-456-7890</a>
+                                        <a href="callto:1234567890" class="mb-2 text-white fs-4 body-font fw-semi-bold">123-456-7890</a>
                                         <a href="mailto:info@gmail.com">info@gmail.com</a>
                                     </div>                                    
                                 </div>
