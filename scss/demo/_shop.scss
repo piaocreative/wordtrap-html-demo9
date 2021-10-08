@@ -35,7 +35,7 @@
 /* Product
 -----------------------------------------------------------------*/
 .product {
-	// margin-bottom: 1.875rem;
+	margin-bottom: 1.875rem;
 	position: relative;
 
 	.product-image {
@@ -119,9 +119,13 @@
 		bottom: 0;
 		left: 0;
 		grid-gap: 0.5rem;
-		padding: .875rem .375rem;
-		opacity: 0;
+		padding: .875rem .375rem;		
 		z-index: 2;
+
+		@include media-breakpoint-up(lg) {
+			opacity: 0;
+		}
+
 		@include transition(all 0.3s ease-in-out);
 	}
 
@@ -217,11 +221,13 @@
 /* Top Products
 -----------------------------------------------------------------*/
 #top-products {
-	.product-image {
-		img {
-			max-height: 22.375rem;
-		}		
-	}
+	@include media-breakpoint-up(xl) {
+		.product-image {
+			img {
+				max-height: 22.375rem;
+			}		
+		}
+	}	
 
 	.product-btns {
 		position: initial;
@@ -245,9 +251,9 @@
 	}
 }
 
+
 /* Ads
 -----------------------------------------------------------------*/
-
 .ads {
 	position: relative;
 	display: block;
@@ -279,7 +285,7 @@
 
 	&.ads1 {
 		.ads-body {
-			padding: 6rem;
+			padding: 7.5rem;
 
 			.ads-content {
 				position: absolute;
@@ -294,17 +300,15 @@
 				}
 			}
 		
-			.title {
-				background-color: #f8a01b;
-				padding: .5rem 0.9rem;
+			.onsale {
+				background-color: #f8a01b;				
 				border-radius: 4rem;
 				font-size: .9375rem;
-				font-weight: 700;
+				font-weight: 800;
 				font-family: $heading-font;
-			}
-		
-			h2 {
-				font-size: 3.75rem;
+				line-height: 1;
+				padding: 0.875rem 1.25rem;
+				position: initial;
 			}
 		
 			button {
@@ -312,7 +316,6 @@
 				padding: 1.8rem 2.2rem;
 				font-size: .9375rem;
 				font-weight: 800;
-				margin-top: 2rem;
 				font-family: $heading-font;
 				letter-spacing: 0.05rem;
 			}

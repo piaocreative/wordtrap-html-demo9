@@ -48,101 +48,160 @@
     
             <div id="header-wrap">
 
-                <div class="container-fluid">
+                <!-- Navbar
+                ============================================= -->
+                <nav class="navbar navbar-light">
 
-                    <div class="row">
-
-                        <nav class="navbar navbar-expand-lg navbar-dark">
-
-                            <div class="container-fluid px-0">
+                    <div class="container-fluid">
         
-                                <!-- Logo
-                                ============================================= -->
-                                <a href="index.html" class="navbar-brand" data-dark-logo="images/logo.png">
-                                    <img src="images/saler-txt.png" alt="Saler Logo">
+                        <!-- Logo
+                        ============================================= -->
+                        <a href="index.html" class="navbar-brand" data-dark-logo="images/logo.png">
+                            <img src="images/saler-txt.png" alt="Saler Logo">
+                        </a>
+                        
+                        <!-- Top Links
+                        ============================================= -->
+                        <ul class="nav align-items-center d-none d-xl-flex" id="top-links">
+
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item">EUR</a></li>
+                                    <li><a href="#" class="dropdown-item">AUD</a></li>
+                                    <li><a href="#" class="dropdown-item">GBP</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">ENG</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/french.png" alt="French"> FR</a></li>
+                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/italian.png" alt="Italian"> IT</a></li>
+                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/german.png" alt="German"> DE</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
+                            </li>
+
+                        </ul><!-- .top-links -->
+
+                        <!-- Top Buttons
+                        ============================================= -->                            
+                        <ul class="nav ms-auto d-none d-xl-flex" id="top-btns">
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="far fa-heart"></i></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="far fa-user"></i></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="modal" href="#modalShoppingCart">
+                                    <span data-cart-items="2">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </span>
                                 </a>
-                                
-                                <!-- Navbar Toggler
-                                ============================================= -->
-                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                                
-                                <!-- Navbar Collapse
-                                ============================================= -->
-                                <div id="navbarCollapse" class="collapse navbar-collapse justify-content-between">
-        
-                                    <!-- Top Links
-                                    ============================================= -->
-                                    <div id="top-links">
-        
-                                        <ul class="nav navbar-nav align-items-center gap-4">
-        
-                                            <li class="nav-item dropdown">
-                                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="#" class="dropdown-item">EUR</a></li>
-                                                    <li><a href="#" class="dropdown-item">AUD</a></li>
-                                                    <li><a href="#" class="dropdown-item">GBP</a></li>
-                                                </ul>
-                                            </li>
-        
-                                            <li class="nav-item dropdown">
-                                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">ENG</a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/french.png" alt="French"> FR</a></li>
-                                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/italian.png" alt="Italian"> IT</a></li>
-                                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/german.png" alt="German"> DE</a></li>
-                                                </ul>
-                                            </li>
-        
-                                            <li class="nav-item">
-                                                <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
-                                            </li>
-        
-                                        </ul>
-        
-                                    </div><!-- .top-links -->
-        
-                                    <!-- Top Buttons
-                                    ============================================= -->
-                                    <div id="top-btns">
-                                        
-                                        <ul class="navbar-nav flex-row">
-        
-                                            <li class="nav-item">
-                                                <a href="#" class="nav-link"><i class="far fa-heart"></i></a>
-                                            </li>
-        
-                                            <li class="nav-item">
-                                                <a href="#" class="nav-link"><i class="far fa-user"></i></a>
-                                            </li>
-        
-                                            <li class="nav-item">
-                                                <a class="nav-link" data-toggle="modal" href="#modalShoppingCart">
-                                                    <span data-cart-items="2">
-                                                        <i class="fas fa-shopping-cart"></i>
-                                                    </span>
-                                                </a>
-                                            </li>
-        
-                                            <li class="nav-item">
-                                                <a href="#" class="nav-link"><i class="fas fa-bars"></i></a>
-                                            </li>
-        
-                                        </ul>
-        
-                                    </div><!-- #top-btns -->
-        
-                                </div><!-- #header-right-col -->
-        
-                            </div>
-        
-                        </nav>
+                            </li>
+
+                        </ul><!-- #top-btns -->
+
+                        <!-- Navbar Toggler
+                        ============================================= -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
 
                     </div>
 
-                </div>                
+                </nav><!-- Navbar -->
+
+                <!-- Navbar Collapse
+                ============================================= -->
+                <div class="collapse navbar-collapse bg-dark" id="navbarCollapse">
+
+                    <div class="container-fluid">
+
+                        <!-- Top Links
+                        ============================================= -->
+                        <ul class="nav align-items-center d-flex d-xl-none" id="top-links">
+
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item">EUR</a></li>
+                                    <li><a href="#" class="dropdown-item">AUD</a></li>
+                                    <li><a href="#" class="dropdown-item">GBP</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">ENG</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/french.png" alt="French"> FR</a></li>
+                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/italian.png" alt="Italian"> IT</a></li>
+                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/german.png" alt="German"> DE</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
+                            </li>
+
+                        </ul><!-- .top-links -->
+                    
+                        <!-- Primary Navigation
+                        ============================================= -->
+                        <ul id="primary-menu" class="nav flex-column">
+                            <li class="current nav-item">
+                                <a href="#" class="nav-link">Home</a>
+                            </li>                                  
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Accessories</a>
+                            </li>                                    
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Blog</a>
+                            </li>
+                        </ul><!-- #primary-menu -->
+
+                        <!-- Top Buttons
+                        ============================================= -->                            
+                        <ul class="nav ms-auto d-flex d-xl-none" id="top-btns">
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="far fa-heart"></i></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="far fa-user"></i></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="modal" href="#modalShoppingCart">
+                                    <span data-cart-items="2">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </span>
+                                </a>
+                            </li>
+
+                        </ul><!-- #top-btns -->
+
+                    </div>
+
+                </div><!-- Navbar Collapse -->                              
             
             </div><!-- #header-wrap -->
 
@@ -154,7 +213,9 @@
 
             <div class="content-wrap">
 
-                <div class="container-fluid p-0">
+                <!-- Banner
+                ============================================= -->
+                <div class="container-fluid p-lg-0">
 
                     <div class="row position-relative">
 
@@ -172,10 +233,8 @@
     
                             </div><!-- #side-bar -->                        
     
-                        </div>
-    
-                        <!-- banner side
-                        ============================================= -->
+                        </div>    
+                        
                         <div id="about" class="col-xl-9 offset-lg-1">
                             
                             <div class="row">
@@ -195,19 +254,15 @@
                                     </div>
             
                                     <div class="row">
-                                        <div class="col-md-6 col-lg-5">
-                                            <img src="./images/about/about1.png" class="w-100 mb-3 mb-lg-0">
+                                        <div class="col-md-6 col-lg-5 pb-5 pb-lg-0">
+                                            <img src="./images/about/about1.png" class="w-100">
                                         </div>
-                                        <div class="col-md-6 col-lg-5">
-                                            <img src="./images/about/about2.png" class="w-100 mb-3 mb-lg-0">
+                                        <div class="col-md-6 col-lg-5 pb-5 pb-lg-0">
+                                            <img src="./images/about/about2.png" class="w-100">
                                         </div>
                                     </div>
 
-                                </div>
-
-                                <div class="col-lg-6">
-                                    <p class="lh-base fs-5 ps-lg-5 fw-lighter">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                                </div>
+                                </div>                                
 
                             </div>
 
@@ -215,29 +270,29 @@
     
                     </div>
 
-                </div>
-
-                <div class="about-banner">
-                    <div class="container-fluid p-0">
-                        <div class="row">
-                            <div class="col-lg-5 offset-lg-7">
-                                <img src="./images/about/about3.png" class="w-100">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </div><!-- Banner -->
                 
-                <!-- best seller side
+                <!-- History
                 ============================================= -->
-                <div class="container-fluid p-0">
+                <div class="container-fluid" style="overflow: initial;">
 
-                    <div class="bg-dark row py-5 ">
+                    <div class="bg-dark row">
 
-                            <div class="col-lg-3 offset-lg-2">
+                        <div class="col-lg-3 offset-lg-2">
 
-                                <div class="bestsellers">
+                            <div class="timeline">
 
-                                    <div class="bestseller py-5">
+                                <div class="events">
+
+                                    <div class="event">
+                                        <span class="ondress text-white">OUR HISTORY</span>
+                                        <h2 class="text-white h1 mt-2">2019</h2>
+                                        <p class="text-white fs-5 lh-base fw-lighter">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        </p>
+                                    </div>
+    
+                                    <div class="event">
                                         <span class="ondress text-white">OUR HISTORY</span>
                                         <h2 class="text-white h1 mt-2">2019</h2>
                                         <p class="text-white fs-5 lh-base fw-lighter">
@@ -245,50 +300,48 @@
                                         </p>
                                     </div>
 
-                                    <div class="bestseller py-5">
-                                        <span class="ondress text-white">OUR HISTORY</span>
-                                        <h2 class="text-white h1 mt-2">2019</h2>
-                                        <p class="text-white fs-5 lh-base fw-lighter">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                        </p>
-                                    </div>
-
-                                </div>
+                                </div>                                
 
                             </div>
 
+                        </div>
+
+                        <div class="col-lg-5 offset-lg-2 position-relative">
+                            <div id="about-banner">
+                                <p class="lh-base fs-5 fw-lighter">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                                <img src="./images/about/about3.png" class="w-100">
+                            </div>  
+                        </div>
+
                     </div>
 
-                </div><!-- best seller -->
+                </div><!-- History -->
 
-                <!-- new products side
+                <!-- New Products
                 ============================================= -->
-                <div class="section">
+                <div class="section">                    
 
-                    <div class="heading-block text-center">
-                        <h3 class="title">New Arrial products</h3>
-                    </div>
+                    <div class="container-fluid p-lg-0">
 
-                    <div class="container-fluid p-0">
+                        <div class="heading-block text-center">
+                            <h2 class="title">New Arrial Products</h2>
+                        </div>
 
-                        <div class="row gx-4">
+                        <div class="row">
                         
                             <div class="col-md-6 col-lg-4 col-xxl-2">
     
-                                <div class="product">           
-    
+                                <div class="product">
                                     <div class="product-image">
                                         <a href="#"><img src="images/shop/product3_1.png" alt="Product Image" class="img-fluid"></a>
-                                        <a href="#"><img src="images/shop/product3_2.png" alt="Product Image" class="img-fluid"></a>
                                         <div class="product-btns d-flex justify-content-center">
                                             <a href="#" class="add-to-wishlist"><i class="fas fa-heart"></i></a>
                                             <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i></a>                                                  
                                         </div>
                                     </div>
-        
                                     <div class="product-details p-3">
                                         <div class="d-flex justify-content-between">
-                                            <h3 class="product-title m-0"><a href="#">Sneakers<br>woman</a></h3>
+                                            <h4 class="product-title m-0"><a href="#">Sneakers<br>woman</a></h3>
                                             <div class="product-rating mt-1">
                                                 <i class="fas fa-star"></i>
                                                 <span class="m-0">4.8</span>
@@ -296,28 +349,50 @@
                                         </div>
                                         <div class="product-info pt-1 pb-2"><span class="product-categories"><a href="#">sneakers</a></span></div>
                                         <div class="product-price">$699<del>$1200</del></div>
-                                    </div>                     
-        
+                                    </div>
                                 </div>
     
                             </div>
     
                             <div class="col-md-6 col-lg-4 col-xxl-2">
     
-                                <div class="product">           
-    
+                                <div class="product">
                                     <div class="product-image">
                                         <a href="#"><img src="images/shop/product3_2.png" alt="Product Image" class="img-fluid"></a>
+                                        <div class="product-btns d-flex justify-content-center">
+                                            <a href="#" class="add-to-wishlist"><i class="fas fa-heart"></i></a>
+                                            <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i></a>                                                  
+                                        </div>
+                                    </div>
+                                    <div class="product-details p-3">
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="product-title m-0"><a href="#">Sneakers<br>woman</a></h3>
+                                            <div class="product-rating mt-1">
+                                                <i class="fas fa-star"></i>
+                                                <span class="m-0">4.8</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-info pt-1 pb-2"><span class="product-categories"><a href="#">sneakers</a></span></div>
+                                        <div class="product-price">$699<del>$1200</del></div>
+                                    </div>
+                                    <div class="onsale text-uppercase">-40%</div>
+                                </div>
+    
+                            </div>
+    
+                            <div class="col-md-6 col-lg-4 col-xxl-2">
+    
+                                <div class="product">
+                                    <div class="product-image">
                                         <a href="#"><img src="images/shop/product3_3.png" alt="Product Image" class="img-fluid"></a>
                                         <div class="product-btns d-flex justify-content-center">
                                             <a href="#" class="add-to-wishlist"><i class="fas fa-heart"></i></a>
                                             <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i></a>                                                  
                                         </div>
                                     </div>
-        
                                     <div class="product-details p-3">
                                         <div class="d-flex justify-content-between">
-                                            <h3 class="product-title m-0"><a href="#">Sneakers<br>woman</a></h3>
+                                            <h4 class="product-title m-0"><a href="#">Sneakers<br>woman</a></h3>
                                             <div class="product-rating mt-1">
                                                 <i class="fas fa-star"></i>
                                                 <span class="m-0">4.8</span>
@@ -326,29 +401,23 @@
                                         <div class="product-info pt-1 pb-2"><span class="product-categories"><a href="#">sneakers</a></span></div>
                                         <div class="product-price">$699<del>$1200</del></div>
                                     </div>
-    
-                                    <div class="onsale text-uppercase">-40%</div>                     
-        
                                 </div>
     
                             </div>
     
                             <div class="col-md-6 col-lg-4 col-xxl-2">
     
-                                <div class="product">           
-    
+                                <div class="product">
                                     <div class="product-image">
-                                        <a href="#"><img src="images/shop/product3_3.png" alt="Product Image" class="img-fluid"></a>
                                         <a href="#"><img src="images/shop/product3_4.png" alt="Product Image" class="img-fluid"></a>
                                         <div class="product-btns d-flex justify-content-center">
                                             <a href="#" class="add-to-wishlist"><i class="fas fa-heart"></i></a>
                                             <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i></a>                                                  
                                         </div>
                                     </div>
-        
                                     <div class="product-details p-3">
                                         <div class="d-flex justify-content-between">
-                                            <h3 class="product-title m-0"><a href="#">Sneakers<br>woman</a></h3>
+                                            <h4 class="product-title m-0"><a href="#">Sneakers<br>woman</a></h3>
                                             <div class="product-rating mt-1">
                                                 <i class="fas fa-star"></i>
                                                 <span class="m-0">4.8</span>
@@ -356,59 +425,25 @@
                                         </div>
                                         <div class="product-info pt-1 pb-2"><span class="product-categories"><a href="#">sneakers</a></span></div>
                                         <div class="product-price">$699<del>$1200</del></div>
-                                    </div>                     
-        
-                                </div>
-    
-                            </div>
-    
-                            <div class="col-md-6 col-lg-4 col-xxl-2">
-    
-                                <div class="product">           
-    
-                                    <div class="product-image">
-                                        <a href="#"><img src="images/shop/product3_4.png" alt="Product Image" class="img-fluid"></a>
-                                        <a href="#"><img src="images/shop/product3_5.png" alt="Product Image" class="img-fluid"></a>
-                                        <div class="product-btns d-flex justify-content-center">
-                                            <a href="#" class="add-to-wishlist"><i class="fas fa-heart"></i></a>
-                                            <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i></a>                                                  
-                                        </div>
                                     </div>
-        
-                                    <div class="product-details p-3">
-                                        <div class="d-flex justify-content-between">
-                                            <h3 class="product-title m-0"><a href="#">Sneakers<br>woman</a></h3>
-                                            <div class="product-rating mt-1">
-                                                <i class="fas fa-star"></i>
-                                                <span class="m-0">4.8</span>
-                                            </div>
-                                        </div>
-                                        <div class="product-info pt-1 pb-2"><span class="product-categories"><a href="#">sneakers</a></span></div>
-                                        <div class="product-price">$699<del>$1200</del></div>
-                                    </div>   
-    
                                     <div class="onnew text-uppercase">NEW</div>
-        
                                 </div>
     
                             </div>
     
                             <div class="col-md-6 col-lg-4 col-xxl-2">
     
-                                <div class="product">           
-    
+                                <div class="product">
                                     <div class="product-image">
                                         <a href="#"><img src="images/shop/product3_5.png" alt="Product Image" class="img-fluid"></a>
-                                        <a href="#"><img src="images/shop/product3_6.png" alt="Product Image" class="img-fluid"></a>
                                         <div class="product-btns d-flex justify-content-center">
                                             <a href="#" class="add-to-wishlist"><i class="fas fa-heart"></i></a>
                                             <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i></a>                                                  
                                         </div>
                                     </div>
-        
                                     <div class="product-details p-3">
                                         <div class="d-flex justify-content-between">
-                                            <h3 class="product-title m-0"><a href="#">Sneakers<br>woman</a></h3>
+                                            <h4 class="product-title m-0"><a href="#">Sneakers<br>woman</a></h3>
                                             <div class="product-rating mt-1">
                                                 <i class="fas fa-star"></i>
                                                 <span class="m-0">4.8</span>
@@ -416,30 +451,25 @@
                                         </div>
                                         <div class="product-info pt-1 pb-2"><span class="product-categories"><a href="#">sneakers</a></span></div>
                                         <div class="product-price">$699<del>$1200</del></div>
-                                    </div>  
-    
+                                    </div>
                                     <div class="onhot text-uppercase">HOT</div>
-        
                                 </div>
     
                             </div>
     
                             <div class="col-md-6 col-lg-4 col-xxl-2">
     
-                                <div class="product">           
-    
+                                <div class="product">
                                     <div class="product-image">
                                         <a href="#"><img src="images/shop/product3_6.png" alt="Product Image" class="img-fluid"></a>
-                                        <a href="#"><img src="images/shop/product3_1.png" alt="Product Image" class="img-fluid"></a>
                                         <div class="product-btns d-flex justify-content-center">
                                             <a href="#" class="add-to-wishlist"><i class="fas fa-heart"></i></a>
                                             <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i></a>                                                  
                                         </div>
                                     </div>
-        
                                     <div class="product-details p-3">
                                         <div class="d-flex justify-content-between">
-                                            <h3 class="product-title m-0"><a href="#">Sneakers<br>woman</a></h3>
+                                            <h4 class="product-title m-0"><a href="#">Sneakers<br>woman</a></h3>
                                             <div class="product-rating mt-1">
                                                 <i class="fas fa-star"></i>
                                                 <span class="m-0">4.8</span>
@@ -447,8 +477,7 @@
                                         </div>
                                         <div class="product-info pt-1 pb-2"><span class="product-categories"><a href="#">sneakers</a></span></div>
                                         <div class="product-price">$699<del>$1200</del></div>
-                                    </div>                     
-        
+                                    </div>
                                 </div>
     
                             </div>
@@ -457,7 +486,18 @@
 
                     </div>
 
-                </div><!-- new  Products -->
+                </div><!-- New Products -->
+
+                <!-- Logos
+                ============================================= -->
+                <div class="logos d-flex">
+                    <div><div class="logo-item"><img src="images/logos/logo1.png" alt="Logo Image" class="img-fluid"></div></div>
+                    <div><div class="logo-item"><img src="images/logos/logo2.png" alt="Logo Image" class="img-fluid"></div></div>
+                    <div><div class="logo-item"><img src="images/logos/logo3.png" alt="Logo Image" class="img-fluid"></div></div>
+                    <div><div class="logo-item"><img src="images/logos/logo4.png" alt="Logo Image" class="img-fluid"></div></div>
+                    <div><div class="logo-item"><img src="images/logos/logo5.png" alt="Logo Image" class="img-fluid"></div></div>
+                    <div><div class="logo-item"><img src="images/logos/logo6.png" alt="Logo Image" class="img-fluid"></div></div>
+                </div>  <!-- logo -->
 
                 <!-- Ads
                 ============================================= -->
@@ -466,10 +506,10 @@
                         <div class="ads-bg-img" style="background-image: url(images/shop/life-style.png);"></div>
                     </div>        
                     <div class="ads-body text-center">
-                        <span class="h5 body-font text-white mb-5 title">EXTRA 30% OFF ONLINE</span>
-                        <h2 class="m-3 lh-1 text-white">Lifestyle colletion</h2>
-                        <h4 class="mb-2 text-white">Free shipping on orders<span style="color: #19d678;"> over $99</span></h4>
-                        <button class="btn btn-primary btn-lg">DISCOVER NOW</button>
+                        <div class="d-inline-block text-white mb-4 onsale">EXTRA 30% OFF ONLINE</div>
+                        <h2 class="mb-4 pt-1 lh-1 text-white" style="font-size: 3.75rem;">Lifestyle colletion</h2>
+                        <h3 class="mb-4 pt-1 pb-1 text-white">Free shipping on orders<span style="color: #19d678;"> over $99</span></h3>
+                        <button class="btn btn-primary btn-lg mt-1">DISCOVER NOW</button>
                     </div>
                 </div><!-- Ads -->
 
@@ -481,128 +521,151 @@
         ============================================= -->
         <footer id="footer">
 
-            <!-- Footer Main
-            ============================================= -->
-            <div id="footer-main">
+            <div class="footer-wrap">
 
-                <div class="container-fluid">
+                <!-- Footer Main
+                ============================================= -->
+                <div id="footer-main">
 
-                    <div class="row">
+                    <div class="container-fluid">
 
-                        <div class="col-md-6 col-xl-4">
+                        <div class="row">
 
-                            <div class="row">
+                            <div class="col-md-6 col-xl-4">
 
-                                <div class="col">
-
-                                    <div class="widget widget-links mb-lg-4 pt-2 text-center text-lg-start">
-                                        <h4 class="widget-title">CUSTOMER SERVICE</h4>
-                                        <div class="widget-content d-md-flex">
-                                            <ul>
-                                                <li><a href="#">Help & FAQs</a></li>
-                                                <li><a href="#">Order Tracking</a></li>
-                                                <li><a href="#">Shipping & Delivery</a></li>
-                                                <li><a href="#">Orders History</a></li>
-                                                <li><a href="#">Advanced Search</a></li>
-                                            </ul>
-                                            <ul>
-                                                <li><a href="#">My Account</a></li>
-                                                <li><a href="#">Careers</a></li>
-                                                <li><a href="#">About Us</a></li>
-                                                <li><a href="#">Corporate Sales</a></li>
-                                                <li><a href="#">Privacy</a></li>
-                                            </ul>
-                                        </div>                                    
-                                    </div>              
-
-                                    <div id="copyrights" class="py-3 text-center text-lg-start">&copy; Copyrights 2021</div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="col-md-6 col-xl-3">
-
-                            <div class="widget widget-custom-html pt-2 text-center text-lg-start">
-                                <h4 class="widget-title">Subscribe to our the free newslettr</h4>
-                                <div class="widget-content">
-                                    <p>Get all the latest information on Events, Sales and Offers. Sign up for newsletter today.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>                                    
-                            </div>
-
-                            <div class="widget widget-payment mt-3 mb-3 mb-lg-0">
-                                <div class="widget-content">
-                                    <div class="payments d-flex justify-content-center justify-content-lg-start">
-                                        <span class="payment-icon visa"></span>
-                                        <span class="payment-icon paypal"></span>
-                                        <span class="payment-icon mastercard"></span>
-                                        <span class="payment-icon express"></span>
-                                    </div>                                    
-                                </div>                                
-                            </div>
-
-                        </div>
-
-                        <div class="row col-xl-4 offset-xl-1">
-
-                            <div class="col-md-6">
-                                
-                                <div class="widget widget-custom-html text-center text-lg-start">
-                                    <div class="widget-content">
-                                        <p class="mb-2 text-white fs-4 fw-semi-bold">New York</p>
-                                        <p class="mb-0">5686 Edverano Center</p>
-                                    </div>                                    
-                                </div>
-
-                                <div class="widget widget-social mb-5">
-                                    <div class="widget-content">
-                                        <ul class="social-icons d-flex align-items-center justify-content-center justify-content-lg-start">
-                                            <li><a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#" target="_blank" title="Linkedin"><i class="fab fa-instagram"></i></a></li>
+                                <div class="widget widget-links mb-lg-4 pt-5">
+                                    <h4 class="widget-title">CUSTOMER SERVICE</h4>
+                                    <div class="widget-content d-md-flex">
+                                        <ul class="flex-fill">
+                                            <li><a href="#">Help & FAQs</a></li>
+                                            <li><a href="#">Order Tracking</a></li>
+                                            <li><a href="#">Shipping & Delivery</a></li>
+                                            <li><a href="#">Orders History</a></li>
+                                            <li><a href="#">Advanced Search</a></li>
                                         </ul>
-                                    </div>
-                                </div>
+                                        <ul class="flex-fill">
+                                            <li><a href="#">My Account</a></li>
+                                            <li><a href="#">Careers</a></li>
+                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="#">Corporate Sales</a></li>
+                                            <li><a href="#">Privacy</a></li>
+                                        </ul>
+                                    </div>                                    
+                                </div>                                          
 
                             </div>
 
-                            <div class="col-md-6">
-                                <div class="widget widget-custom-html text-center text-lg-start">
+                            <div class="col-md-6 col-xl-4">
+
+                                <div class="widget widget-custom-html pt-5">
+                                    <h4 class="widget-title">Subscribe to our the free newslettr</h4>
                                     <div class="widget-content">
-                                        <a href="callto:1234567890" class="mb-2 text-white fs-4 body-font fw-semi-bold">123-456-7890</a>
-                                        <a href="mailto:info@gmail.com">info@gmail.com</a>
+                                        <p>Get all the latest information on Events, Sales and Offers. Sign up for newsletter today.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                     </div>                                    
                                 </div>
 
+                                <div class="widget widget-payment mt-3 mb-3 mb-lg-0">
+                                    <div class="widget-content">
+                                        <div class="payments d-flex">
+                                            <span class="payment-icon visa"></span>
+                                            <span class="payment-icon paypal"></span>
+                                            <span class="payment-icon mastercard"></span>
+                                            <span class="payment-icon express"></span>
+                                        </div>                                    
+                                    </div>                                
+                                </div>
+
                             </div>
 
-                            <div class="col-xl-11">
+                            <div class="col-xl-4">
 
-                                <div class="widget widget-subscribe pb-xxl-5 text-center text-lg-start">
-                                    <div class="widget-content">
-                                        <form id="widget-subscribe-form" action="#" method="post">
-                                            <div class="input-group">
-                                                <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Email">
-                                                <div class="input-group-append">
-                                                    <button class="btn btn-primary text-uppercase" type="submit">Subscribe</button>
-                                                </div>
+                                <div class="row pt-5">
+
+                                    <div class="col-md-6">
+                                    
+                                        <div class="widget widget-custom-html">
+                                            <div class="widget-content">
+                                                <p class="mb-2 text-white fs-4 fw-semi-bold">New York</p>
+                                                <p class="mb-0">5686 Edverano Center</p>
+                                            </div>                                    
+                                        </div>
+        
+                                        <div class="widget widget-social">
+                                            <div class="widget-content">
+                                                <ul class="social-icons d-flex align-items-center">
+                                                    <li><a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                                    <li><a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                                                    <li><a href="#" target="_blank" title="Linkedin"><i class="fab fa-instagram"></i></a></li>
+                                                </ul>
                                             </div>
-                                        </form>
-                                    </div>                                    
+                                        </div>
+        
+                                    </div>
+        
+                                    <div class="col-md-6 pt-5 pt-md-0">
+
+                                        <div class="widget widget-custom-html">
+                                            <div class="widget-content">
+                                                <a href="callto:1234567890" class="mb-2 text-white fs-4 body-font fw-semi-bold">123-456-7890</a>
+                                                <a href="mailto:info@gmail.com">info@gmail.com</a>
+                                            </div>                                    
+                                        </div>
+        
+                                    </div>
+
                                 </div>
 
+                                <div class="row pt-5">
+
+                                    <div class="col">
+
+                                        <div class="widget widget-subscribe pb-xxl-5 text-center text-lg-start">
+                                            <div class="widget-content">
+                                                <form id="widget-subscribe-form" action="#" method="post">
+                                                    <div class="input-group">
+                                                        <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Email">
+                                                        <div class="input-group-append">
+                                                            <button class="btn btn-primary text-uppercase" type="submit">Subscribe</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>                                    
+                                        </div>
+        
+                                    </div>    
+
+                                </div>
+                                
                             </div>
 
                         </div>
 
                     </div>
 
-                </div>
+                </div><!-- #footer-main -->
 
-            </div><!-- #footer-main -->
+                <!-- Footer Bottom
+                ============================================= -->
+                <div id="footer-bottom">
+
+                    <div class="container-fluid">
+
+                        <div class="row">
+
+                            <div class="col">
+
+                                <div id="copyrights" class="py-3 text-center text-lg-start">&copy; Copyrights 2021</div>
+
+                            </div>
+
+                        </div>                    
+
+                    </div>
+
+                </div><!-- #footer-bottom -->
+
+            </div>            
 
         </footer><!-- #footer -->
 

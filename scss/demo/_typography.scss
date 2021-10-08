@@ -88,21 +88,7 @@ iframe { border: none !important; }
 	Basic Layout Styles
 -----------------------------------------------------------------*/
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	color: $heading-color;
-	line-height: 1.43;
-	margin: 0 0 1.875rem 0;
-	font-family: $heading-font;
-	font-weight: 700;
-}
-
 h1 {
-	font-weight: 800;
 	line-height: $line-height-base;
 }
 

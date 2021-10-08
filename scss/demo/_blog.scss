@@ -11,23 +11,30 @@
 
 .post {
 	position: relative;
-	margin-bottom: 4.5rem;
+	display: flex;
+	flex-direction: column;
 
-	a {
-        text-decoration: none;
-    }
+	@include media-breakpoint-only(md) {
+		flex-direction: row;
+	}		
+	
+	.post-content,
+	.post-thumbnail {
+		@include media-breakpoint-only(md) {
+			width: 50%;
+		}		
+	}
 
-    .entry-title {
-
-        h4 {
-            margin-bottom: 1rem;
-            line-height: 2.8rem;
-            font-family: $heading-font;
-        }
-    }
+	&.post-row {
+		.post-content,
+		.post-thumbnail {
+			@include media-breakpoint-up(xl) {
+				width: 50%;
+			}		
+		}
+	}		
 
     .entry-meta {
-
         a {
             color: #aeaeae;
         }
@@ -79,24 +86,15 @@
 
 .post-content {
 	position: relative;
-	padding: 2.8rem 0 0;
-	margin-bottom: 1.875rem;
-
-	@include media-breakpoint-down(lg) {
-		height: auto !important;
-	}
+	padding: 3.375rem;
 }
 
 .entry-title {
-	font-family: $body-font;
-	line-height: $line-height-sm;		
+	line-height: 3rem;		
 	margin-bottom: 0.625rem;
-	font-size: 1.875rem;
-	font-weight: 800;
 }
 
 .entry-content {
-	font-size: 1rem;
 	color: #888887;
 }
 

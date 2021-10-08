@@ -36,8 +36,8 @@ $( document ).ready( function() {
         });
     } 
 
-    if ( $( '.bestsellers' ).length ) {
-        $( '.bestsellers' ).slick({
+    if ( $( '.events' ).length ) {
+        $( '.events' ).slick({
             infinite: true,
             slidesToShow: 1,
             slidesToScroll: 1,

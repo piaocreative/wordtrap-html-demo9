@@ -10,59 +10,51 @@
 
 
 .timeline {
-    background-color: #25262a;
-    padding-top: 8.125rem;
-    padding-bottom: 8.125rem;
+    padding-top: 9.125rem;
+    padding-bottom: 9.125rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
 
-    .events-wrapper {
-        .events {
-            position: relative;
-            overflow: hidden;
+    @include media-breakpoint-up(lg) {
+        margin-left: -3.375rem;
+        padding-left: 0;
+        padding-right: 0;
+    }    
 
-            .event {
-                padding: 0 2.8125rem;
-                position: relative;
-
-                .event-thumbnail {
-                    padding-left: 1.875rem;
-                    position: relative;
-
-                    img {
-                        @include transition(all 0.3s ease-in-out);        
-                    }
-                }
-
-                .event-detail {
-                    margin-top: -4.375rem;
-                    position: relative;
-                    z-index: 1;
-
-                    .event-date {
-                        color: $white;
-                        font-size: 6.875rem;
-                        line-height: 8.75rem;
-                        @include transition(all 0.3s ease-in-out);                        
-                    }
-
-                    span {
-                        color: $white;
-                        font-size: 1.1875rem;
-                        line-height: 2.125rem;
-                    }
-                }                
-
-                &:hover {
-                    .event-thumbnail {
-                        img {
-                            @include scale(1.2);
-                        }
-                    }
-
-                    .event-date {
-                        @include translateX(1.875rem);
-                    }
-                }
-            }
-        }
+    .slick-prev {
+        left: -3.5rem;
     }
+    
+    .slick-next, .slick-prev {
+        top: 10rem;
+    }
+
+    .events {
+        .event {
+            .ondress {
+                display: inline-block;
+                font-size: 0.9375rem;
+                padding: .7rem 1.2rem;
+                background-color: #ff3263;
+                border-radius: 1.875rem;
+                font-weight: 800;
+                font-family: $heading-font;
+                letter-spacing: 0.05rem;
+            }
+        
+            &.h4 {
+                font-size: 1.75rem;
+            }
+        
+            h2 {
+                font-size: 6.125rem;
+            }
+        
+            a {
+                font-size: 1.215rem;
+                font-weight: 300;
+                font-family: sans-serif;
+            }
+        }   
+    }        
 }

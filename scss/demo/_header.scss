@@ -17,14 +17,15 @@
 
 
 #header {
+	background-color: $dark;
 	position: relative;
 	
 	// Transparent header
 	&.transparent-header {
 		z-index: 199;
 
-		// @include media-breakpoint-up(xl) {
-			background-color: transparent;
+		@include media-breakpoint-up(xl) {
+			background-color: transparent;			
 
 			& + #content,
 			& + #contact-info,
@@ -33,13 +34,28 @@
 				top: -$header-height;
 				margin-bottom: -$header-height;
 			}	
-		// }			
+
+			#navbarCollapse {
+				background-color: $dark;
+				position: absolute;
+				left: 0;
+				top: 100%;
+				width: 100%;
+				padding-left: 5rem;
+				padding-right: 5rem;
+			}
+		}			
 	}
 }
 
 #header-wrap {
-	@include media-breakpoint-up(xxl) {
-		padding: 1rem 4.375rem 2.375rem;
+	@include media-breakpoint-up(xl) {
+		padding-left: 5rem;
+		padding-right: 5rem;
+	}
+
+	.container-fluid {
+		overflow: initial;
 	}
 }
 
@@ -47,9 +63,12 @@
 	flex-wrap: nowrap;
 }
 
-.navbar-toggler {
-	border-radius: 0;
-	background-color: #00d772;
+.navbar-light .navbar-toggler {
+	@include media-breakpoint-down(xl) {
+		.navbar-toggler-icon {
+			background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+		}
+	}
 }
 
 
@@ -89,15 +108,14 @@
 	@include media-breakpoint-up(lg) {
 		padding-top: 0;
 	}
-	
-	.nav-item:not(:first-child) {
-		margin-left: 1.25rem;
-	}
 
 	.nav-link {
 		font-size: $top-btn-font-size;	
 		line-height: 1;
-		color: $dark;
+
+		@include media-breakpoint-up(xl) {
+			color: $dark;
+		}			
 
 		&:hover {
 			color: $theme-color;
@@ -106,27 +124,24 @@
 		[data-cart-items] {
 			position: relative;
 			display: inline-block;
-		}
-		[data-cart-items]::before {
-			content: attr(data-cart-items);
-			position: absolute;
-			top: -.5rem;
-			right: -.75rem;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			width: 19px;
-			height: 19px;
-			font-size: 11px;
-			font-weight: 500;
-			border-radius: 50%;
-			border: 1px solid #fff;
-			background-color: #ff6f61;
-			color: #fff;
-		}
 
-		@include media-breakpoint-down(xl) {
-			color: $white;
+			&::before {
+				content: attr(data-cart-items);
+				position: absolute;
+				top: -.5rem;
+				right: -.75rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 19px;
+				height: 19px;
+				font-size: 11px;
+				font-weight: 500;
+				border-radius: 50%;
+				border: 1px solid #fff;
+				background-color: #ff6f61;
+				color: #fff;
+			}
 		}
 	}
 }
@@ -138,9 +153,9 @@
 
 #top-links {
 	a.nav-link {
-		display: block;
-		font-size: 0.75rem;	
-		color: $dark;
+		@include media-breakpoint-up(xl) {
+			color: $dark;
+		}		
 
 		&:hover {
 			color: $theme-color;
@@ -156,10 +171,11 @@
 	.dropdown-menu {
 		background: $white;
 		border: 0;
-		top: 1.5rem;
+		top: 100%;
 		left: 0;
 		width: 100%;		
 		margin: 0;
+		border-top: 3px solid $theme-color;
 
 		@include border-radius(0);
 
@@ -185,16 +201,6 @@
 			height: 1rem;
 			margin-right: 0.25rem;
 		}
-	}
-}
-
-@include media-breakpoint-down(xl) {
-	.nav-link {
-		color: white;
-	}
-
-	#header {
-		background-color: #000;
 	}
 }
 
@@ -224,7 +230,7 @@
     @include media-breakpoint-down(xl) {
 		position: relative;
 		left: 0;
-		padding: 7rem 0 2rem 0;
+		padding: 0 0 2rem 0;
 
 		ul {
 			display: flex;

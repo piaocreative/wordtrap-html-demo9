@@ -29,109 +29,166 @@
 
     <div id="wrapper" class="clearfix">
 
+        <!-- Header
+		============================================= -->
         <header id="header" class="transparent-header">
     
             <div id="header-wrap">
 
-                <div class="container-fluid">
+                <!-- Navbar
+                ============================================= -->
+                <nav class="navbar navbar-light">
 
-                    <div class="row">
+                    <div class="container-fluid">
+        
+                        <!-- Logo
+                        ============================================= -->
+                        <a href="index.html" class="navbar-brand" data-dark-logo="images/logo.png">
+                            <img src="images/saler-txt.png" alt="Saler Logo">
+                        </a>
+                        
+                        <!-- Top Links
+                        ============================================= -->
+                        <ul class="nav align-items-center d-none d-xl-flex" id="top-links">
 
-                        <div class="col-xl-9">
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item">EUR</a></li>
+                                    <li><a href="#" class="dropdown-item">AUD</a></li>
+                                    <li><a href="#" class="dropdown-item">GBP</a></li>
+                                </ul>
+                            </li>
 
-                            <nav class="navbar navbar-expand-lg navbar-dark">
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">ENG</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/french.png" alt="French"> FR</a></li>
+                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/italian.png" alt="Italian"> IT</a></li>
+                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/german.png" alt="German"> DE</a></li>
+                                </ul>
+                            </li>
 
-                                <div class="container-fluid px-0">
-            
-                                    <!-- Logo
-                                    ============================================= -->
-                                    <a href="index.html" class="navbar-brand" data-dark-logo="images/logo.png">
-                                        <img src="images/saler-txt.png" alt="Saler Logo">
-                                    </a>
-                                    
-                                    <!-- Navbar Toggler
-                                    ============================================= -->
-                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false">
-                                        <span class="navbar-toggler-icon"></span>
-                                    </button>
-                                    
-                                    <!-- Navbar Collapse
-                                    ============================================= -->
-                                    <div id="navbarCollapse" class="collapse navbar-collapse justify-content-between">
-            
-                                        <!-- Top Links
-                                        ============================================= -->
-                                        <div id="top-links">
-            
-                                            <ul class="nav navbar-nav align-items-center gap-4">
-            
-                                                <li class="nav-item dropdown">
-                                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a href="#" class="dropdown-item">EUR</a></li>
-                                                        <li><a href="#" class="dropdown-item">AUD</a></li>
-                                                        <li><a href="#" class="dropdown-item">GBP</a></li>
-                                                    </ul>
-                                                </li>
-            
-                                                <li class="nav-item dropdown">
-                                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">ENG</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a href="#" class="dropdown-item"><img src="images/icons/flags/french.png" alt="French"> FR</a></li>
-                                                        <li><a href="#" class="dropdown-item"><img src="images/icons/flags/italian.png" alt="Italian"> IT</a></li>
-                                                        <li><a href="#" class="dropdown-item"><img src="images/icons/flags/german.png" alt="German"> DE</a></li>
-                                                    </ul>
-                                                </li>
-            
-                                                <li class="nav-item">
-                                                    <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
-                                                </li>
-            
-                                            </ul>
-            
-                                        </div><!-- .top-links -->
-            
-                                        <!-- Top Buttons
-                                        ============================================= -->
-                                        <div id="top-btns">
-                                            
-                                            <ul class="navbar-nav flex-row">
-            
-                                                <li class="nav-item">
-                                                    <a href="#" class="nav-link"><i class="far fa-heart"></i></a>
-                                                </li>
-            
-                                                <li class="nav-item">
-                                                    <a href="#" class="nav-link"><i class="far fa-user"></i></a>
-                                                </li>
-            
-                                                <li class="nav-item">
-                                                    <a class="nav-link" data-toggle="modal" href="#modalShoppingCart">
-                                                        <span data-cart-items="2">
-                                                          <i class="fas fa-shopping-cart"></i>
-                                                        </span>
-                                                      </a>
-                                                </li>
-            
-                                                <li class="nav-item">
-                                                    <a href="#" class="nav-link"><i class="fas fa-bars"></i></a>
-                                                </li>
-            
-                                            </ul>
-            
-                                        </div><!-- #top-btns -->
-            
-                                    </div><!-- #header-right-col -->
-            
-                                </div>
-            
-                            </nav>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
+                            </li>
 
-                        </div>
+                        </ul><!-- .top-links -->
+
+                        <!-- Top Buttons
+                        ============================================= -->                            
+                        <ul class="nav ms-auto d-none d-xl-flex" id="top-btns">
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="far fa-heart"></i></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="far fa-user"></i></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="modal" href="#modalShoppingCart">
+                                    <span data-cart-items="2">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </span>
+                                </a>
+                            </li>
+
+                        </ul><!-- #top-btns -->
+
+                        <!-- Navbar Toggler
+                        ============================================= -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
 
                     </div>
 
-                </div>                
+                </nav><!-- Navbar -->
+
+                <!-- Navbar Collapse
+                ============================================= -->
+                <div class="collapse navbar-collapse bg-dark" id="navbarCollapse">
+
+                    <div class="container-fluid">
+
+                        <!-- Top Links
+                        ============================================= -->
+                        <ul class="nav align-items-center d-flex d-xl-none" id="top-links">
+
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item">EUR</a></li>
+                                    <li><a href="#" class="dropdown-item">AUD</a></li>
+                                    <li><a href="#" class="dropdown-item">GBP</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">ENG</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/french.png" alt="French"> FR</a></li>
+                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/italian.png" alt="Italian"> IT</a></li>
+                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/german.png" alt="German"> DE</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
+                            </li>
+
+                        </ul><!-- .top-links -->
+                    
+                        <!-- Primary Navigation
+                        ============================================= -->
+                        <ul id="primary-menu" class="nav flex-column">
+                            <li class="current nav-item">
+                                <a href="#" class="nav-link">Home</a>
+                            </li>                                  
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Accessories</a>
+                            </li>                                    
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Blog</a>
+                            </li>
+                        </ul><!-- #primary-menu -->
+
+                        <!-- Top Buttons
+                        ============================================= -->                            
+                        <ul class="nav ms-auto d-flex d-xl-none" id="top-btns">
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="far fa-heart"></i></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="far fa-user"></i></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="modal" href="#modalShoppingCart">
+                                    <span data-cart-items="2">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </span>
+                                </a>
+                            </li>
+
+                        </ul><!-- #top-btns -->
+
+                    </div>
+
+                </div><!-- Navbar Collapse -->                              
             
             </div><!-- #header-wrap -->
 
@@ -143,7 +200,7 @@
 
             <div class="content-wrap">
 
-                <div class="container-fluid p-0">
+                <div class="container-fluid p-lg-0">
 
                     <div class="row">
 
@@ -163,7 +220,7 @@
     
                         </div>
                             
-                        <div class="col-xl-5 offset-xl-1">
+                        <div class="col-lg-6 col-xl-5 offset-lg-1">
     
                             <!-- Contact Info
                             ============================================= -->
@@ -247,8 +304,10 @@
     
                         <!-- Map
                         ============================================= -->
-                        <div id="contact-sidebar" class="col-xl-3 offset-xl-1">
-                            <img src="./images/contact/map.png" class="img-full">
+                        <div id="contact-sidebar" class="col-lg-5 col-xl-3 offset-xl-1">
+                            <div id="map">
+                                <img src="./images/contact/map.png" class="img-full">
+                            </div>                            
                         </div><!-- map -->
     
                     </div>
@@ -263,128 +322,151 @@
         ============================================= -->
         <footer id="footer">
 
-            <!-- Footer Main
-            ============================================= -->
-            <div id="footer-main">
+            <div class="footer-wrap">
 
-                <div class="container-fluid">
+                <!-- Footer Main
+                ============================================= -->
+                <div id="footer-main">
 
-                    <div class="row">
+                    <div class="container-fluid">
 
-                        <div class="col-md-6 col-xl-4">
+                        <div class="row">
 
-                            <div class="row">
+                            <div class="col-md-6 col-xl-4">
 
-                                <div class="col">
-
-                                    <div class="widget widget-links mb-lg-4 pt-2 text-center text-lg-start">
-                                        <h4 class="widget-title">CUSTOMER SERVICE</h4>
-                                        <div class="widget-content d-md-flex">
-                                            <ul>
-                                                <li><a href="#">Help & FAQs</a></li>
-                                                <li><a href="#">Order Tracking</a></li>
-                                                <li><a href="#">Shipping & Delivery</a></li>
-                                                <li><a href="#">Orders History</a></li>
-                                                <li><a href="#">Advanced Search</a></li>
-                                            </ul>
-                                            <ul>
-                                                <li><a href="#">My Account</a></li>
-                                                <li><a href="#">Careers</a></li>
-                                                <li><a href="#">About Us</a></li>
-                                                <li><a href="#">Corporate Sales</a></li>
-                                                <li><a href="#">Privacy</a></li>
-                                            </ul>
-                                        </div>                                    
-                                    </div>              
-
-                                    <div id="copyrights" class="py-3 text-center text-lg-start">&copy; Copyrights 2021</div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="col-md-6 col-xl-3">
-
-                            <div class="widget widget-custom-html pt-2 text-center text-lg-start">
-                                <h4 class="widget-title">Subscribe to our the free newslettr</h4>
-                                <div class="widget-content">
-                                    <p>Get all the latest information on Events, Sales and Offers. Sign up for newsletter today.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>                                    
-                            </div>
-
-                            <div class="widget widget-payment mt-3 mb-3 mb-lg-0">
-                                <div class="widget-content">
-                                    <div class="payments d-flex justify-content-center justify-content-lg-start">
-                                        <span class="payment-icon visa"></span>
-                                        <span class="payment-icon paypal"></span>
-                                        <span class="payment-icon mastercard"></span>
-                                        <span class="payment-icon express"></span>
-                                    </div>                                    
-                                </div>                                
-                            </div>
-
-                        </div>
-
-                        <div class="row col-xl-4 offset-xl-1">
-
-                            <div class="col-md-6">
-                                
-                                <div class="widget widget-custom-html text-center text-lg-start">
-                                    <div class="widget-content">
-                                        <p class="mb-2 text-white fs-4 fw-semi-bold">New York</p>
-                                        <p class="mb-0">5686 Edverano Center</p>
-                                    </div>                                    
-                                </div>
-
-                                <div class="widget widget-social mb-5">
-                                    <div class="widget-content">
-                                        <ul class="social-icons d-flex align-items-center justify-content-center justify-content-lg-start">
-                                            <li><a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#" target="_blank" title="Linkedin"><i class="fab fa-instagram"></i></a></li>
+                                <div class="widget widget-links mb-lg-4 pt-5">
+                                    <h4 class="widget-title">CUSTOMER SERVICE</h4>
+                                    <div class="widget-content d-md-flex">
+                                        <ul class="flex-fill">
+                                            <li><a href="#">Help & FAQs</a></li>
+                                            <li><a href="#">Order Tracking</a></li>
+                                            <li><a href="#">Shipping & Delivery</a></li>
+                                            <li><a href="#">Orders History</a></li>
+                                            <li><a href="#">Advanced Search</a></li>
                                         </ul>
-                                    </div>
-                                </div>
+                                        <ul class="flex-fill">
+                                            <li><a href="#">My Account</a></li>
+                                            <li><a href="#">Careers</a></li>
+                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="#">Corporate Sales</a></li>
+                                            <li><a href="#">Privacy</a></li>
+                                        </ul>
+                                    </div>                                    
+                                </div>                                          
 
                             </div>
 
-                            <div class="col-md-6">
-                                <div class="widget widget-custom-html text-center text-lg-start">
+                            <div class="col-md-6 col-xl-4">
+
+                                <div class="widget widget-custom-html pt-5">
+                                    <h4 class="widget-title">Subscribe to our the free newslettr</h4>
                                     <div class="widget-content">
-                                        <a href="callto:1234567890" class="mb-2 text-white fs-4 body-font fw-semi-bold">123-456-7890</a>
-                                        <a href="mailto:info@gmail.com">info@gmail.com</a>
+                                        <p>Get all the latest information on Events, Sales and Offers. Sign up for newsletter today.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                     </div>                                    
                                 </div>
 
+                                <div class="widget widget-payment mt-3 mb-3 mb-lg-0">
+                                    <div class="widget-content">
+                                        <div class="payments d-flex">
+                                            <span class="payment-icon visa"></span>
+                                            <span class="payment-icon paypal"></span>
+                                            <span class="payment-icon mastercard"></span>
+                                            <span class="payment-icon express"></span>
+                                        </div>                                    
+                                    </div>                                
+                                </div>
+
                             </div>
 
-                            <div class="col-xl-11">
+                            <div class="col-xl-4">
 
-                                <div class="widget widget-subscribe pb-xxl-5 text-center text-lg-start">
-                                    <div class="widget-content">
-                                        <form id="widget-subscribe-form" action="#" method="post">
-                                            <div class="input-group">
-                                                <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Email">
-                                                <div class="input-group-append">
-                                                    <button class="btn btn-primary text-uppercase" type="submit">Subscribe</button>
-                                                </div>
+                                <div class="row pt-5">
+
+                                    <div class="col-md-6">
+                                    
+                                        <div class="widget widget-custom-html">
+                                            <div class="widget-content">
+                                                <p class="mb-2 text-white fs-4 fw-semi-bold">New York</p>
+                                                <p class="mb-0">5686 Edverano Center</p>
+                                            </div>                                    
+                                        </div>
+        
+                                        <div class="widget widget-social">
+                                            <div class="widget-content">
+                                                <ul class="social-icons d-flex align-items-center">
+                                                    <li><a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                                    <li><a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                                                    <li><a href="#" target="_blank" title="Linkedin"><i class="fab fa-instagram"></i></a></li>
+                                                </ul>
                                             </div>
-                                        </form>
-                                    </div>                                    
+                                        </div>
+        
+                                    </div>
+        
+                                    <div class="col-md-6 pt-5 pt-md-0">
+
+                                        <div class="widget widget-custom-html">
+                                            <div class="widget-content">
+                                                <a href="callto:1234567890" class="mb-2 text-white fs-4 body-font fw-semi-bold">123-456-7890</a>
+                                                <a href="mailto:info@gmail.com">info@gmail.com</a>
+                                            </div>                                    
+                                        </div>
+        
+                                    </div>
+
                                 </div>
 
+                                <div class="row pt-5">
+
+                                    <div class="col">
+
+                                        <div class="widget widget-subscribe pb-xxl-5 text-center text-lg-start">
+                                            <div class="widget-content">
+                                                <form id="widget-subscribe-form" action="#" method="post">
+                                                    <div class="input-group">
+                                                        <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Email">
+                                                        <div class="input-group-append">
+                                                            <button class="btn btn-primary text-uppercase" type="submit">Subscribe</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>                                    
+                                        </div>
+        
+                                    </div>    
+
+                                </div>
+                                
                             </div>
 
                         </div>
 
                     </div>
 
-                </div>
+                </div><!-- #footer-main -->
 
-            </div><!-- #footer-main -->
+                <!-- Footer Bottom
+                ============================================= -->
+                <div id="footer-bottom">
+
+                    <div class="container-fluid">
+
+                        <div class="row">
+
+                            <div class="col">
+
+                                <div id="copyrights" class="py-3 text-center text-lg-start">&copy; Copyrights 2021</div>
+
+                            </div>
+
+                        </div>                    
+
+                    </div>
+
+                </div><!-- #footer-bottom -->
+
+            </div>            
 
         </footer><!-- #footer -->
 

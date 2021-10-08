@@ -49,6 +49,7 @@
 					height: 1.8125rem;		
 					vertical-align: middle;
 					text-align: center;
+					
 					@include border-radius(50%);
 					@include transition(all 0.3s ease-in-out);
 		

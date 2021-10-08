@@ -19,8 +19,13 @@
 	position: relative;
 }
 
-#footer-main {
-	padding: 6.25rem 6rem 3rem;
+.footer-wrap {
+	padding: 1rem 0 6rem;
+
+	@include media-breakpoint-up(xl) {
+		padding-left: 5rem;
+		padding-right: 5rem;
+	}	
 }
 
 #copyrights {

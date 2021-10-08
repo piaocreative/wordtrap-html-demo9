@@ -19,48 +19,20 @@
     }
 }
 
-.about-banner {
-    position: absolute;
-    top: calc(55rem - 27vw);
-    right: 0;
-    width: 100%;
-
-    @include media-breakpoint-down(lg) {
-        position: relative;
-        top: 0;
-    }
-}
-
-.bestseller {
-    .ondress {
-        font-size: 0.9375rem;
-        padding: .7rem 1.2rem;
-        background-color: #ff3263;
-        border-radius: 1.875rem;
-        font-weight: 800;
-        font-family: $heading-font;
-        letter-spacing: 0.05rem;
+#about-banner {
+    p {
+        color: $white;
     }
 
-	&.h4 {
-		font-size: 1.75rem;
-	}
+    @include media-breakpoint-up(lg) {
+        position: absolute;
+        bottom: 11.25rem;
+        right: 0;
+        width: 100%;
 
-	h2 {
-		font-size: 6.125rem;
-	}
-
-	a {
-		font-size: 1.215rem;
-		font-weight: 300;
-		font-family: sans-serif;
-	}
-}
-
-.slick-prev {
-    left: -3.5rem;
-}
-
-.slick-next, .slick-prev {
-    top: 10rem;
+        p {
+            color: $dark;
+            padding-right: 14rem;
+        }
+    }
 }
