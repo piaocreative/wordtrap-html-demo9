@@ -15,23 +15,23 @@
 -----------------------------------------------------------------*/
 
 #footer {
-	background-color: #000000;
+	background-color: $dark;
 	position: relative;
 }
 
-.footer-wrap {
+.footer-content {
 	padding: 1rem 0 6rem;
 
 	@include media-breakpoint-up(xl) {
 		padding-left: 5rem;
 		padding-right: 5rem;
-	}	
+	}
 }
 
 #copyrights {
 	color: #61605f;
 	font-size: 0.875rem;
-	font-weight: 300;	
+	font-weight: 300;
 	line-height: 1;
-	z-index: 1;	
+	z-index: 1;
 }

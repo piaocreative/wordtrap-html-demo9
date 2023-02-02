@@ -42,36 +42,36 @@ dl, dt, dd, ol, ul, li {
 
 
 html {
-    scroll-behavior: smooth;
-    font-size: 100%;
+	scroll-behavior: smooth;
+	font-size: 100%;
 
-    /*--------------------------------------------------------------
-    ## Netbook
-    --------------------------------------------------------------*/
-    @include media-breakpoint-down(xl) {
-        font-size: 90%;
-    }
+	/*--------------------------------------------------------------
+	## Netbook
+	--------------------------------------------------------------*/
+	@include media-breakpoint-down(xl) {
+		font-size: 90%;
+	}
 
-    /*--------------------------------------------------------------
-    ## Tablet
-    --------------------------------------------------------------*/
-    @include media-breakpoint-down(lg) {
-        font-size: 85%;
-    }
-  
-    /*--------------------------------------------------------------
-    ## Mobile
-    --------------------------------------------------------------*/
+	/*--------------------------------------------------------------
+	## Tablet
+	--------------------------------------------------------------*/
+	@include media-breakpoint-down(lg) {
+		font-size: 85%;
+	}
+
+	/*--------------------------------------------------------------
+	## Mobile
+	--------------------------------------------------------------*/
 	@include media-breakpoint-down(md) {
-        font-size: 80%;
-    }
-    
-    /*--------------------------------------------------------------
-    ## Mini
-    --------------------------------------------------------------*/
-    @include media-breakpoint-down(sm) {
-        font-size: 75%;
-    }
+		font-size: 80%;
+	}
+
+	/*--------------------------------------------------------------
+	## Mini
+	--------------------------------------------------------------*/
+	@include media-breakpoint-down(sm) {
+		font-size: 75%;
+	}
 }
 
 body {
@@ -100,6 +100,7 @@ pre,
 dl,
 dd,
 blockquote,
+q,
 address,
 table,
 fieldset,
@@ -110,7 +111,7 @@ small { font-family: $body-font; }
 ul { margin: 0; }
 ul li { list-style: none; }
 
-i { 
+i {
 	display: inline-block;
 	line-height: inherit;
 }
@@ -118,4 +119,29 @@ i {
 a {
 	text-decoration: none;
 	@include transition(color 0.3s ease-in-out);
+}
+
+/* Blockquote */
+blockquote,
+q {
+	color: $theme-color;
+	display: block;
+	font-size: 1.875rem;
+	font-style: italic;
+	font-weight: 300;
+	line-height: 3.75rem;
+
+	&::before {
+		color: $theme-color;
+		font-size: 3rem;
+		font-style: italic;
+		font-weight: 300;
+		line-height: 1;
+		display: block;
+		text-align: center;
+	}
+
+	&::after {
+		content: "";
+	}
 }

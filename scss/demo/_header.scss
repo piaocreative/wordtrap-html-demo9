@@ -19,62 +19,63 @@
 #header {
 	background-color: $dark;
 	position: relative;
-	
+	// overflow: hidden;
+	z-index: 99;
+
 	// Transparent header
 	&.transparent-header {
-		z-index: 199;
+		@include media-breakpoint-up(lg) {
+			background-color: transparent;
 
-		@include media-breakpoint-up(xl) {
-			background-color: transparent;			
-
-			& + #content,
-			& + #contact-info,
-			& + #error-404 {
+			& + #content {
 				position: relative;
 				top: -$header-height;
 				margin-bottom: -$header-height;
-			}	
-
-			#navbarCollapse {
-				background-color: $dark;
-				position: absolute;
-				left: 0;
-				top: 100%;
-				width: 100%;
-				padding-left: 5rem;
-				padding-right: 5rem;
 			}
-		}			
-	}
-}
-
-#header-wrap {
-	@include media-breakpoint-up(xl) {
-		padding-left: 5rem;
-		padding-right: 5rem;
+		}
 	}
 
-	.container-fluid {
-		overflow: initial;
-	}
-}
+	#navbarCollapse {
+		background-color: $dark;
+		position: fixed;
+		right: 0;
+		top: 0;
+		width: 25%;
+		height: 100%;
 
-.nav {
-	flex-wrap: nowrap;
-}
+		@include transition($transition-collapse);
 
-.navbar-light .navbar-toggler {
-	@include media-breakpoint-down(xl) {
-		.navbar-toggler-icon {
-			background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+		&.collapse {
+			&:not(.show) {
+				display: block;
+				  right: -25%;
+			}
+		}
+
+		&.collapsing {
+			right: -25%;
 		}
 	}
 }
 
 
 /* ----------------------------------------------------------------
-	Sticky Header
+	Navbar toggler
 -----------------------------------------------------------------*/
+
+.navbar-toggler {
+	&:focus {
+		@include box-shadow(none);
+	}
+}
+
+.navbar-light .navbar-toggler {
+	@include media-breakpoint-down(lg) {
+		.navbar-toggler-icon {
+			background-image: escape-svg(url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#ffffff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>"));
+		}
+	}
+}
 
 
 /* ----------------------------------------------------------------
@@ -82,45 +83,174 @@
 -----------------------------------------------------------------*/
 
 .navbar-brand {
-	margin-right: 8rem;
+	// margin-right: 8rem;
 
 	img {
-		width: 6rem;
+		width: 9.375rem;
 	}
 }
 
 
 /* ----------------------------------------------------------------
-	Mega Menu
+	Navbar
 -----------------------------------------------------------------*/
 
-// Please ignore mega menu now 
+.navbar {
+	@include media-breakpoint-up(lg) {
+		padding-left: 0;
+		padding-right: 0;
+
+		&.navbar-expanded  {
+			.col-lg-10 {
+				padding-right: 0;
+
+				@include transition($transition-collapse);
+			}
+
+			&.collapsed {
+				.col-lg-10 {
+					padding-right: 25%;
+				}
+			}
+		}
+	}
+
+	&.navbar-dark {
+		.nav-link {
+			color: $white;
+
+			&:hover,
+			&:focus {
+				color: $theme-color;
+			}
+		}
+	}
+
+	&.navbar-light {
+		.nav-link {
+			color: $dark;
+
+			&:hover,
+			&:focus {
+				color: $theme-color;
+			}
+		}
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Primary Menu
+-----------------------------------------------------------------*/
+
+#primary-menu {
+	.nav-link {
+		font-size: 1.5rem;
+		font-weight: 300;
+		line-height: 1;
+		padding: 1.25rem 1.5rem;
+
+		@include transition(all 0.5s ease-in-out);
+	}
+
+	.nav-item {
+		& > .nav-link {
+			color: $white;
+		}
+
+		&.current,
+		&:hover {
+			& > .nav-link {
+				background-color: $theme-color;
+				color: $white;
+
+				@include media-breakpoint-up(lg) {
+					padding: 2.8125rem 1.5rem 1.25rem;
+				}
+			}
+		}
+
+		& > .dropdown-menu {
+			background-color: $white;
+			border: none;
+			border-radius: 0;
+			box-shadow: none;
+			padding: 1rem 1.5rem;
+
+			&[data-bs-popper] {
+				margin-top: 0;
+			}
+
+			@include media-breakpoint-up(lg) {
+				position: relative;
+				display: none;
+
+				@include transition(transform .5s ease-out);
+				@include translate3d(0, -100px, 0);
+			}
+
+			.nav-item {
+				& > .nav-link {
+					border: none;
+					color: $dark;
+					font-size: 0.875rem;
+					font-weight: 400;
+					padding: 0.75rem 0.9375rem;
+				}
+
+				&.current,
+				&:hover {
+					& > .nav-link {
+						background-color: transparent;
+						color: $theme-color;
+					}
+				}
+			}
+		}
+
+		@include media-breakpoint-up(lg) {
+			&.current,
+			&:hover {
+				.dropdown-menu {
+					display: block;
+
+					@include translate3d(0, 0, 0);
+				}
+			}
+		}
+	}
+}
 
 
 /* ----------------------------------------------------------------
 	Top Buttons
 -----------------------------------------------------------------*/
 
-
 #top-btns {
 	padding-top: 1rem;
+	padding-bottom: 1rem;
 
 	@include media-breakpoint-up(lg) {
 		padding-top: 0;
+		padding-bottom: 0;
 	}
 
 	.nav-link {
-		font-size: $top-btn-font-size;	
+		font-size: $top-btn-font-size;
 		line-height: 1;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
 
-		@include media-breakpoint-up(xl) {
-			color: $dark;
-		}			
+		@include media-breakpoint-up(lg) {
+			// color: $dark;
+			padding-left: $nav-link-padding-x;
+			padding-right: $nav-link-padding-x;
+		}
 
 		&:hover {
-			color: $theme-color;
+			// color: $theme-color;
 		}
-		
+
 		[data-cart-items] {
 			position: relative;
 			display: inline-block;
@@ -152,13 +282,18 @@
 -----------------------------------------------------------------*/
 
 #top-links {
-	a.nav-link {
-		@include media-breakpoint-up(xl) {
-			color: $dark;
-		}		
+	.nav-link {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+
+		@include media-breakpoint-up(lg) {
+			// color: $dark;
+			padding-left: $nav-link-padding-x;
+			padding-right: $nav-link-padding-x;
+		}
 
 		&:hover {
-			color: $theme-color;
+			// color: $theme-color;
 		}
 	}
 
@@ -173,7 +308,7 @@
 		border: 0;
 		top: 100%;
 		left: 0;
-		width: 100%;		
+		width: 100%;
 		margin: 0;
 		border-top: 3px solid $theme-color;
 
@@ -182,14 +317,14 @@
 		@include box-shadow(0 0 5px -1px rgba($black, 0.2));
 
 		a.dropdown-item {
-			color: $heading-color;
+			// color: $headings-color;
 			height: 2.25rem;
 			line-height: 2.25rem;
-			font-size: 0.75rem;				
+			font-size: 0.75rem;
 			padding: 0 0.75rem;
 
 			&:hover {
-				color: $theme-color;
+				// color: $theme-color;
 			}
 		}
 
@@ -204,79 +339,51 @@
 	}
 }
 
-#top-social {
-	position: absolute;
-	left: 38%;
-	bottom: 0;
-
-    ul {
-		li {
-			transform: rotate(-90deg);
-			margin-bottom: 8rem;
-
-			a {
-				color: white;
-				white-space: nowrap;
-				text-transform: uppercase;
-				font-size: 0.875rem;
-	
-				&:hover {
-					color: $theme-color;
-				}
-			}
-		}
-    }
-
-    @include media-breakpoint-down(xl) {
-		position: relative;
-		left: 0;
-		padding: 0 0 2rem 0;
-
-		ul {
-			display: flex;
-			justify-content: center;
-			gap: 3rem;
-
-			li {
-				transform: rotate(0deg);
-				margin: 0;
-			}
-		}
-    }
-}
-
-/* ----------------------------------------------------------------
-	Top Infos
------------------------------------------------------------------*/
-
-
 
 /* ----------------------------------------------------------------
 	Top Social
 -----------------------------------------------------------------*/
 
+#top-social {
+	position: absolute;
+	left: 5.625rem;
+	bottom: 5.125rem;
+
+	ul {
+		display: flex;
+		width: 100%;
+
+		@include media-breakpoint-up(lg) {
+			transform-origin: 0 0;
+			@include rotate(-90deg);
+		}
 
 
-/* ----------------------------------------------------------------
-	Top Login
------------------------------------------------------------------*/
+		li {
+			margin-right: 3.25rem;
 
+			span,
+			a {
+				color: white;
+				white-space: nowrap;
+				text-transform: uppercase;
+				font-size: 0.875rem;
+			}
 
+			a:hover {
+				color: $theme-color;
+			}
+		}
+	}
 
-/* ----------------------------------------------------------------
-	Top Search
------------------------------------------------------------------*/
+	@include media-breakpoint-down(lg) {
+		position: relative;
+		left: 0;
+		bottom: initial;
+		padding: 0 0 1rem 0;
 
-
-
-
-/* ----------------------------------------------------------------
-	Top Cart
------------------------------------------------------------------*/
-
-
-
-
-/* ----------------------------------------------------------------
-	Top Account
------------------------------------------------------------------*/
+		ul {
+			justify-content: center;
+		}
+	}
+}

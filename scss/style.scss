@@ -1,13 +1,13 @@
 /*-----------------------------------------------------------------------------------
 
-    Theme Name: Saler
-    Theme URI: 
-    Description: The Multi-Purpose Ecommerce Template
-    Author: John Piao
-    Author URI: 
-    Version: 1.0
+	Theme Name: Wordtrap
+	Theme URI:
+	Description: The Multi-Purpose Ecommerce Template
+	Author: John Piao
+	Author URI:
+	Version: 1.0
 
-    SASS Stylesheet
+	SASS Stylesheet
 
 -----------------------------------------------------------------------------------*/
 
@@ -17,49 +17,48 @@
 
 
 // Bootstrap
-@import "scss/bootstrap/bootstrap";
+@import "bootstrap/bootstrap";
 
 
 // Core CSS
 @import "demo/typography";
 
 
-#demo9 {
-    // Content Blocks
-    @import "demo/topbar";
-    @import "demo/header";
-    @import "demo/banner";
-    @import "demo/shop";
-    @import "demo/blog";
-    @import "demo/contact";
-    @import "demo/404";
-
-    // Page Title
-    @import "demo/pagetitle";
+// Content Blocks
+@import "demo/topbar";
+@import "demo/header";
+@import "demo/banner";
+@import "demo/shop";
+@import "demo/blog";
 
 
-    // // Footer
-    @import "demo/footer";
+// Page
+@import "demo/page";
 
 
-    // Utilities
-    @import "demo/utilities";
+// Footer
+@import "demo/footer";
 
 
+// Form
+@import "demo/form";
 
-    // // Widgets
-    @import "demo/widgets";
+
+// Utilities
+@import "demo/utilities";
 
 
-    @import "demo/form";
+// Widgets
+@import "demo/widgets";
 
-    // // Shortcodes
-    @import "demo/shortcodes/feature-box";
-    @import "demo/shortcodes/headings";
-    @import "demo/shortcodes/logos";
-    @import "demo/shortcodes/icon-box";
-    @import "demo/shortcodes/timeline";
 
-    // Extras
-    @import "demo/extras";
-}
+// Shortcodes
+@import "demo/shortcodes/feature-box";
+@import "demo/shortcodes/headings";
+@import "demo/shortcodes/logos";
+@import "demo/shortcodes/icon-box";
+@import "demo/shortcodes/socials";
+
+
+// Extras
+@import "demo/extras";

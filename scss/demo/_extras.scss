@@ -9,30 +9,8 @@
 /* ----------------------------------------------------------------
 	Extra Styles
 -----------------------------------------------------------------*/
-.container-fluid {
-    overflow: hidden;
-}
 
-#about {
-    @include media-breakpoint-up(lg) {
-        padding-top: 12rem;
-    }
-}
 
-#about-banner {
-    p {
-        color: $white;
-    }
-
-    @include media-breakpoint-up(lg) {
-        position: absolute;
-        bottom: 11.25rem;
-        right: 0;
-        width: 100%;
-
-        p {
-            color: $dark;
-            padding-right: 14rem;
-        }
-    }
-}
+/* ----------------------------------------------------------------
+	Add here extra styles for demo. Thanks!
+-----------------------------------------------------------------*/
